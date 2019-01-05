@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>课程</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<script type="text/javascript" src="../js/layui.js">
+		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">
+		</script>
+		<style type="text/css">
+			.Start {margin-left: 0px;}.class-tab {clear: both;width: 780px;float: left;	}.layui-tab-title {background: #303332;}
+			.layui-tab-title>li {letter-spacing: 1px;color: #FFFFFF;font-size: 18px;text-align: left;width:75px;margin-top: -1px; margin-right: 40px;}.layui-tab-content {border: 1px solid #EEEEEE;min-height: 1080px; width: 100%; background: #FFFFFF;margin-bottom: 50px;}
+			.layui-tab-item {width: 100%;height: 100%;}.layui-collapse {	width: 100%;}.layui-this:after {border-radius: 2px}.layui-tab{margin: -10px 0;}
+			.layui-tab-brief>.layui-tab-title .layui-this:after {border-bottom: 2px solid #F63232}		
+		</style>
+	</head>
+
+	<body style="background: #EEEEEE;">
+	<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+		<div class="class-bg">
+			<div class="class-xinxi">
+				<!--课程封面 -->
+				<div class="class-face">
+					<img src="../img/class/class14.png" />
+				</div>
+				<!--课程信息-->
+				<div class="class-xinxi2">
+					<!--课程标题-->
+					<div class="class-biaoti">
+						<h3>咏春拳13招基本手法</h3>
+					</div>
+					<!--课程评分 -->
+					<div class="Start">
+						<div id="Starts01"></div><span style="margin-left: 30px">169人评分</span>
+					</div>
+					<script>
+						layui.use(['rate'], function() {
+							var rate = layui.rate;
+							//只读
+							rate.render({
+								elem: '#Starts01',
+								value: 4.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+						});
+					</script>
+
+					<!--立即学习-->
+					<div class="Immediate-learning">
+						<button class="layui-btn"><a href="StudyClass.html">立即学习</a></button>
+					</div>
+					<!--加入收藏-->
+					<div class="class-Collection">
+						<input class="class-Collection1" value="加入收藏" />
+						<script type="text/javascript">
+							$(document).ready(function() {
+								var onOff = true;
+								var div = $(".class-Collection1");
+								div.click(function() {
+									if(div.onOff) {
+										div.val("加入收藏");
+										div.onOff = false;
+									} else {
+										div.val("已收藏");
+										div.onOff = true;
+									}
+								});
+							});
+						</script>
+					</div>
+					<!--分享-->
+					<div class="share">
+						<a class="share">分享 <img src="../img/tubiao/fenxiang2.png" /></a>
+						<p class="share-tubiao">
+							<a href=""><img src="../img/tubiao/QQ.png" /></a>
+							<a href=""><img src="../img/tubiao/weibo.png" /></a>
+							<a href=""><img src="../img/tubiao/qqkongjian.png" /></a>
+						</p>
+					</div>
+				</div>
+
+				<!--课程-->
+				<div class="class-tab">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+						<ul class="layui-tab-title">
+							<li class="layui-this">课程介绍</li>
+							<li>课程目录</li>
+							<li>学员交流</li>
+							<li>慕课考核</li>
+
+						</ul>
+
+						<div class="layui-tab-content">
+							<!--课程简介-->
+							<div class="layui-tab-item layui-show ">
+								<img src="../img/class/class15.png">
+								<img src="../img/class/class16.png" />
+							</div>
+
+							<!--课程目录 -->
+							<div class="layui-tab-item  class-Catalog">
+								<!--第一章-->
+								<ul>
+									<li>
+										<h3>第一章：问路手</h3></li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第一节：问路
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第二节：招式
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第三节：动作要领
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第四节：易犯错误
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+
+								</ul>
+
+								<!--第二章-->
+								<ul>
+									<li>
+										<h3>第二章：拍手</h3></li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第一节：开马
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第二节：双肩要保持平衡
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第三节：易犯错误
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+
+								</ul>
+
+								<!--第三章-->
+								<ul>
+									<li>
+										<h3>第三章：摊手</h3></li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第一节：二字钳阳马
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a href="https://fanyi.baidu.com">
+					    					<button class="class-type">视频</button>
+					    				第二节：屈肘归中
+					    			   
+					    			    <span class="class-time">16:00</span>
+					    			    <button class="class-state">开始学习</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a >
+					    					<button class="class-type">视频</button>
+					    				第三节：易犯错误
+					    			   
+					    			    
+					    			    <button class="class-state-wei">暂未开课</button>
+					    			    </a>
+					    			</h4>
+									</li>
+									<li>
+										<h4>
+					    				<a >
+					    					<button class="class-type">视频</button>
+					    				第四节：动作要领
+					    			   
+					    			    <button class="class-state-wei">暂未开课</button>
+					    			    </a>
+					    			</h4>
+									</li>
+
+								</ul>
+							</div>
+
+							<!--课程评分-->
+							<div class="layui-tab-item">
+								<div class="class-score">
+									<form action=""class="pingfen-form">
+										<div class="layui-form-item">
+											<label class="layui-form-label">给课程评分</label>
+										</div>
+										<!--评分-->
+										<div class="layui-form-item">
+											<div class="layui-input-block">
+
+												<div id="Start"></div>
+												<!--评分，默认五星-->
+												<script>
+													layui.use(['rate'], function() {
+														var rate = layui.rate;
+														//基础效果
+														rate.render({
+															elem: '#Start',
+															value: 5,
+															theme: '#24B658',
+														})
+													});
+												</script>
+											</div>
+										</div>
+
+										<!--输入框评论内容-->
+
+										<textarea name="con" id="Review-content" cols="45" rows="6" placeholder="大贤世居大邦，见多识广，而且荣列胶庠，自然才贯二酉，学富五车了!"></textarea>
+										<h6 style="margin-left: 20px;color: #999999;">期待您的精彩评论，您还可以输入<span>150</span>个字，现在剩余<span id="word" style="color: #F63232;">150</span>个</h6>
+										<script type="text/javascript">
+											$(function() {
+												$("#Review-content").keyup(function() {
+													var len = $(this).val().length;
+													if(len > 139) {
+														$(this).val($(this).val().substring(0, 150));
+													}
+													var num = 150 - len;
+													$("#word").text(num);
+												});
+											});
+										</script>
+
+										<button type="submit" class="class-evaluate">提交评价</button>
+
+									</form>
+
+									<!--评分列表-->
+									<div class="Review-list">
+										<h3>评分（5） <span class="pingfen">我也要评分</span></h3>
+											
+											<script type="text/javascript">
+												
+												$(".pingfen").click(function(){
+												  $(".pingfen-form").show();
+												   $(".pingfen").hide();
+												});
+											</script>
+										<!--评论 -->
+										<div class="Review">
+											<!--评论人信息-->
+											<p>
+												<img src="../img/Teacher/TeacherSmalltitle02.jpg" />
+												<span>佟湘玉</span>
+												<span id="Review1"></span>
+												<script>
+													layui.use(['rate'], function() {
+														var rate = layui.rate;
+														//基础效果
+														rate.render({
+															elem: '#Review1',
+															theme: '#24B658',
+															value: 5.0,
+															readonly: true,
+														});
+													});
+												</script>
+												<span>09-10 12:00</span>
+											</p>
+											<!--评论内容-->
+											<div class="Review-con">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis aliquid inventore in quo cupiditate culpa repellat nam rem laborum itaque reprehenderit blanditiis necessitatibus animi laudantium? Nisi cum dolorum ex.
+											</div>
+										</div>
+
+										<div class="Review">
+											<!--评论人信息-->
+											<p>
+												<img src="../img/Teacher/TeacherSmalltitle02.jpg" />
+												<span>佟湘玉</span>
+												<span id="Review2"></span>
+												<script>
+													layui.use(['rate'], function() {
+														var rate = layui.rate;
+														//基础效果
+														rate.render({
+															elem: '#Review2',
+															theme: '#24B658',
+															value: 5.0,
+															readonly: true,
+														});
+													});
+												</script>
+												<span>09-10 12:00</span>
+											</p>
+											<!--评论内容-->
+											<div class="Review-con">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis aliquid inventore in quo cupiditate culpa repellat nam rem laborum itaque reprehenderit blanditiis necessitatibus animi laudantium? Nisi cum dolorum ex.
+											</div>
+										</div>
+
+										<div class="Review">
+											<!--评论人信息-->
+											<p>
+												<img src="../img/Teacher/TeacherSmalltitle02.jpg" />
+												<span>佟湘玉</span>
+												<span id="Review2"></span>
+												<script>
+													layui.use(['rate'], function() {
+														var rate = layui.rate;
+														//基础效果
+														rate.render({
+															elem: '#Review3',
+															theme: '#24B658',
+															value: 5.0,
+															readonly: true,
+														});
+													});
+												</script>
+												<span>09-10 12:00</span>
+											</p>
+											<!--评论内容-->
+											<div class="Review-con">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis aliquid inventore in quo cupiditate culpa repellat nam rem laborum itaque reprehenderit blanditiis necessitatibus animi laudantium? Nisi cum dolorum ex.
+											</div>
+										</div>
+
+										<div class="Review">
+											<!--评论人信息-->
+											<p>
+												<img src="../img/Teacher/TeacherSmalltitle02.jpg" />
+												<span>佟湘玉</span>
+												<span id="Review4"></span>
+												<script>
+													layui.use(['rate'], function() {
+														var rate = layui.rate;
+														//基础效果
+														rate.render({
+															elem: '#Review4',
+															theme: '#24B658',
+															value: 5.0,
+															readonly: true,
+														});
+													});
+												</script>
+												<span>09-10 12:00</span>
+											</p>
+											<!--评论内容-->
+											<div class="Review-con">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis aliquid inventore in quo cupiditate culpa repellat nam rem laborum itaque reprehenderit blanditiis necessitatibus animi laudantium? Nisi cum dolorum ex.
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!--慕课考核-->
+							<div class="layui-tab-item class-Assessment  ">
+								 <div class="layui-col-md12">
+							      <div class="layui-card">
+							        <div class="layui-card-header">
+							        	<h3>第一章：名字自己取</h3>
+							        </div>
+							        <div class="layui-card-body">
+							         <h4><a href="">第一节：名字自己取  <button>参加考核</button></a></h4>
+							          <h4><a href="">第二节：名字自己去 <button>参加考核</button></a></h4>
+							           <h4><a href="">第三节：名字自己取 <button>参加考核</button></a></h4>
+							            <h4><a href="">第四节：章节考试 <button>参加考核</button></a></h4>
+							        </div>
+							        
+							         <div class="layui-card-header">
+							        	<h3>第二章：名字自己取</h3>
+							        </div>
+							        <div class="layui-card-body">
+							         <h4><a href="">第一节：名字自己取  <button>参加考核</button></a></h4>
+							          <h4><a href="">第二节：名字自己去 <button>参加考核</button></a></h4>
+							           <h4><a href="">第三节：名字自己取 <button>参加考核</button></a></h4>
+							            <h4><a href="">第四节：章节考试 <button>参加考核</button></a></h4>
+							        </div>
+							        
+							         <div class="layui-card-header">
+							        	<h3>第三章：名字自己取</h3>
+							        </div>
+							        <div class="layui-card-body">
+							         <h4><a href="">第一节：名字自己取  <button>参加考核</button></a></h4>
+							          <h4><a href="">第二节：名字自己去 <button>参加考核</button></a></h4>
+							           <h4><a href="">第三节：名字自己取 <button>参加考核</button></a></h4>
+							            <h4><a href="">第四节：章节考试 <button>参加考核</button></a></h4>
+							        </div>
+							        
+							        
+							         <div class="layui-card-header">
+							        	<h3>第四章：名字自己取</h3>
+							        </div>
+							        <div class="layui-card-body">
+							         <h4><a href="">第一节：名字自己取  <button>参加考核</button></a></h4>
+							          <h4><a href="">第二节：名字自己去 <button>参加考核</button></a></h4>
+							           <h4><a href="">第三节：名字自己取 <button>参加考核</button></a></h4>
+							            <h4><a href="">第四节：章节考试 <button>参加考核</button></a></h4>
+							        </div>
+							        
+							      </div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--课程老师-->
+			<div class="Claa-Teacher">
+				<div class="class-teacher">
+					<h3>授课老师</h3>
+					<div class="class-teacher-xinxi">
+						<a href="../Artist/Artist001.html"><img src="../img/Teacher/TeacherSmalltitle01.jpg"/></a>
+						<h3>白展堂</h3>
+						<h4>盗圣，隐逸于同福客栈</h4>
+					</div>
+					<br />
+					<h3>其他课程</h3>
+					<div class="class-other">
+						<div class="class-other1">
+							<a href=""><img src="../img/banner10.png"/></a>
+							<h4>课程标题课程标题课程标题课程标题</h4>
+						</div>
+						<div class="class-other1">
+							<a href=""><img src="../img/banner10.png"/></a>
+							<h4>课程标题课程标题课程标题课程标题</h4>
+						</div>
+						<div class="class-other1">
+							<a href=""><img src="../img/banner10.png"/></a>
+							<h4>课程标题课程标题课程标题课程标题</h4>
+						</div>
+						<div class="class-other1">
+							<a href=""><img src="../img/banner10.png"/></a>
+							<h4>课程标题课程标题课程标题课程标题</h4>
+						</div>
+					</div>
+				</div>	
+			</div>
+			</div>
+
+		</div>
+
+		</div>
+
+		
+
+		
+		<div class="footer">
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+		
+	</body>
+
+</html>

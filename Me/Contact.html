@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>联系小艺</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/modules/layer/default/layer.css"/>
+		<link rel="import" type="text/css" href="../General-navigation.html" />
+		<script type="text/javascript" src="../js/layui.js"></script>
+		<style type="text/css">
+			.layui-tab-title {	background: none;border-bottom: 1px solid #EEEEEE;}			
+			.layui-this {border-bottom: 2px solid #F63232;}
+			.layui-tab-title>li {height: 33px;}
+			.problem>.layui-input-block>input{display: none;}
+		</style>
+	</head>
+
+	<body>
+		<script>
+			var link = document.querySelector('link[rel="import"]');
+			var content = link.import;
+
+			// 从General-navigation.html 的文档中获取 DOM。
+			var el = content.querySelector('.header');
+
+			document.body.appendChild(el.cloneNode(true));
+		</script>
+		<script>
+			var link = document.querySelector('link[rel="import"]');
+			var content = link.import;
+
+			// 从General-navigation.html 的文档中获取 DOM。
+			var el = content.querySelector('.Me-xinxi');
+
+			document.body.appendChild(el.cloneNode(true));
+		</script>
+		<div class="Me-bg" style="padding-bottom: 100px;">
+			<div class="content">
+				<!--导航Start-->
+				<div class="layui-collapse">
+					<div class="layui-colla-item">
+						<a href="../Me.html">
+							<h2 class="layui-colla-title  ">学习兴趣</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Order.html">
+							<h2 class="layui-colla-title ">我的订单</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="">
+							<h2 class="layui-colla-title ">我的收藏</h2>
+						</a>
+
+					</div>
+
+					<div class="layui-colla-item">
+						<a href="Message-center.html">
+							<h2 class="layui-colla-title">消息中心</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Sign-in and shop.html">
+							<h2 class="layui-colla-title">签到赢积分</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="PersonInfoEdit.html">
+							<h2 class="layui-colla-title">设置</h2>
+						</a>
+
+					</div>
+
+					<div class="layui-colla-item">
+						<a href="TeachrtAdmission.html">
+							<h2 class="layui-colla-title ">老师入驻</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item layui-colla-title-this">
+						<a href="Contact.html">
+							<h2 class="layui-colla-title">联系小艺</h2>
+						</a>
+
+					</div>
+					
+				</div>
+				<!--导航END -->
+
+				<div class="Me-body">
+					<div class="Contact">
+						<form class="layui-form" action="">
+							<div class="layui-form-item problem">
+								<label class="layui-form-label">问题反馈：</label>
+								<div class="layui-input-block">
+									<input type="radio" name="feedback" value="课程审核" title="课程审核">
+									<input type="radio" name="feedback" value="产品bug" title="产品bug" >
+									<input type="radio" name="feedback" value="账号问题" title="账号问题" >
+									<input type="radio" name="feedback" value="产品bug" title="产品bug" >
+									<input type="radio" name="feedback" value="功能建议" title="功能建议" >
+									<input type="radio" name="feedback" value="产品bug" title="产品bug" >
+									<input type="radio" name="feedback" value="侵权投诉" title="侵权投诉" >
+									<input type="radio" name="feedback" value="违规违法" title="违规违法" >
+								</div>
+							</div>
+							<div class="layui-form-item ">
+								<label class="layui-form-label">反馈内容：</label>
+								<div class="layui-input-block">
+									<textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">联系方式：</label>
+								<div class="layui-input-block" >
+									<input type="text" name="lianxifangshi" id="lianxifangshi" value="" class="layui-input"/>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+									<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+									<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+								</div>
+							</div>
+						</form>
+
+						<script>
+							//Demo
+							layui.use('form', function() {
+								var form = layui.form;
+
+								//监听提交
+								form.on('submit(formDemo)', function(data) {
+									layer.msg(JSON.stringify(data.field));
+									return false;
+								});
+							});
+						</script>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--底部-->
+		<div class="footer">
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

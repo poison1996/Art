@@ -1,0 +1,409 @@
+
+body{
+	background-size: 100% 100%; 
+	height: 100vh;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+
+::-webkit-scrollbar {
+	width:5px;
+} /* 这是针对缺省样式 (必须的) */
+
+
+::-webkit-scrollbar-track {
+	background-color:rgba(0,0,0,0);
+	border-radius:10px;
+} /* 滚动条的滑轨背景颜色 */
+
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.1); 
+	border-radius:10px;
+} /* 滑块颜色 */
+
+
+::-webkit-scrollbar-button {
+	background-color:rgba(0,0,0,0);
+	height: 0;
+} /* 滑轨两头的监听按钮颜色 */
+
+
+::-webkit-scrollbar-corner {
+	background-color: black;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+
+p{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+
+.wechat{
+    width:300px;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    border-radius:4px;
+    overflow: hidden;
+}
+
+
+
+
+/*******聊天窗口******/
+
+.talk_window{
+	width:300px;
+	height: 100%;
+	float: left;
+	background: #f5f5f5;
+}
+
+.windows_top{
+	padding-top:10px;
+	height: 62px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.windows_top_box > span{
+	font-size: 18px;
+	color: #333;
+	line-height: 52px;
+	padding-left: 30px;
+	display: inline-block;
+}
+
+.windows_top_box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.window_icon{
+	position:absolute;
+	top:-10px;
+	right: 0;
+}
+
+.window_icon li{
+	float: left;
+	width:34px;
+	height: 26px;
+	position: relative;
+}
+
+.window_icon li:hover{
+	background: #e3e3e3;
+}
+
+
+.window_icon li a img{
+	position: absolute;
+	left: 50%;
+ 	top: 50%;
+ 	transform:translate(-50%,-50%);
+}
+
+.extend{
+	position: absolute;
+	right:14px;
+	top: 20px;
+	width: 18px;
+	height: 16px;
+	background: url(../images/icon/icon11.png) center center no-repeat;
+	cursor:pointer;
+}
+
+.extend:hover{
+	background: url(../images/icon/icon12.png) center center no-repeat;
+}
+
+.windows_input{
+	border-top: 1px solid #ececec;
+	height: 145px;
+	width: 100%;
+}
+
+.windows_body{
+	min-height: 600px;
+	width: 100%;
+}
+
+.input_icon{
+	height: 42px;
+	padding:0 28px;
+}
+
+.input_icon a{
+	position: relative;
+	display: inline-block;
+	height: 20px;
+	width: 24px;
+	margin-top:11px;
+	margin-right:8px;
+}
+
+.input_icon a:nth-child(1){
+	background: url(../images/icon/icon13.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(1):hover{
+	background: url(../images/icon/icon13_1.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(2){
+	background: url(../images/icon/icon14.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(2):hover{
+	background: url(../images/icon/icon14_1.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(3){
+	background: url(../images/icon/icon15.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(3):hover{
+	background: url(../images/icon/icon15_1.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(4){
+	background: url(../images/icon/icon16.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(4):hover{
+	background: url(../images/icon/icon16_1.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(6){
+	background: url(../images/icon/icon17.png) no-repeat center center;
+	float: right;
+}
+
+.input_icon a:nth-child(6):hover{
+	background: url(../images/icon/icon17_1.png) no-repeat center center;
+}
+
+.input_icon a:nth-child(5){
+	background: url(../images/icon/icon18.png) no-repeat center center;
+	float: right;
+}
+
+.input_icon a:nth-child(5):hover{
+	background: url(../images/icon/icon18_1.png) no-repeat center center;
+}
+
+.input_icon a img{
+	position: absolute;
+	left: 50%;
+ 	top: 50%;
+ 	transform:translate(-50%,-50%);
+}
+
+.input_box textarea{
+	border: none;
+	outline: 0;
+	background:#FFFFFF;
+	resize:none;
+	margin-left: 28px;
+	font-size: 14px;
+	height: 100px;
+	width: 300px;
+}
+
+.input_box{
+	height: 300px;
+}
+.office_text{
+	min-height:650px;
+}
+.office_text1{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: inline-block;
+}
+
+#send{
+	border:1px solid #e5e5e5;
+	background:#1086FF;
+	color: #FFFFFF;
+	padding:0 8px;
+	outline: 0;
+	height: 26px;
+	float: right;
+}
+
+#send:hover{
+	background:#F63232;
+	color: #fff;
+}
+
+.optionLeft{
+	background: rgb(158,243,106);
+	float: right;
+}
+
+.windows_body p{
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius:4px;
+}
+
+
+/*区分聊天*/
+
+.content{
+	width: 100%;
+	padding:10px 0px;
+}
+
+.me img{
+	float: right;
+    width: 34px;
+    height: 34px;
+    border-radius: 2px; 
+}
+
+.me span { 
+    float: right;
+    background: #9eea6a;
+}
+
+.me{
+    margin-top: 10px;
+    padding-left: 10px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    float:right;
+    margin-bottom:5px;
+}
+
+.me span{
+    background: #F63232;
+    color: #FFFFFF;
+    padding:7px;
+    border-radius:4px;
+    margin:10px 10px;
+    max-width:200px;
+    position: relative;
+    letter-spacing: 1px;
+    
+}
+
+.me span:before{
+    content: " ";
+    position: absolute;
+    top: 9px;
+    right: 100%;
+    border-left-color: #9eea6a;
+    right: inherit;
+    left: 100%;
+}
+
+/*other*/
+.other img{
+	float: right;
+    width: 34px;
+    height: 34px;
+    border-radius: 2px; 
+}
+
+.other span { 
+    float: right;
+    background: #9eea6a;
+    letter-spacing: 1px;
+}
+
+.other{
+    margin-top: 10px;
+    padding-left: 10px;
+    width:80%;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    float:left;
+    margin-bottom:5px;
+}
+.other img {
+    float: left;
+}
+.other span{
+    background: #fff;
+    padding:7px;
+    border-radius:4px;
+    float: left;
+    max-width:200px;
+    border: 1px solid #ededed;
+    position: relative;
+    text-align: left;
+}
+
+.other span:before{
+    content:"";
+    position: absolute;
+    top: 9px;
+    right: 100%;
+    border-right-color: #fff;
+    right: inherit;
+    right: 100%;
+}
+
+.other>h3{
+	float: left;
+	width: 100px;
+	text-align: left;
+	margin: 5px 5px 5px 5px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.me>h3{
+	margin: 0;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 400;
+	margin-right:50px;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

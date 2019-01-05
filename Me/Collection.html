@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的收藏</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script type="text/javascript" src="../js/layui.js">		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">		</script>
+		<style type="text/css">
+			.layui-tab-title{background: none; border-bottom: 1px solid #EEEEEE;}.layui-this{border-bottom: 2px solid #F63232;}.layui-tab-title>li{height: 33px;}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item ">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+		<div class="Me-xinxi">
+			<div class="content">
+				<!--修改头像-->
+				<div class="Me-xinxi2">
+
+					<img src="../img/Teacher/TeacherSmalltitle02.jpg" />
+					<a href="../Me.html">
+						<div class="ME-xinxin-titlexiugai">
+							<h3>修改头像</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="Me-xinxi3">
+					<h3>酱酱123</h3>
+					<span>这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介</span>
+				</div>
+
+				<div class="Me-QR">
+					<img src="../img/QR/Wechar.jpg" />
+				</div>
+
+			</div>
+		</div>
+
+		<div class="Me-bg" style="padding-bottom: 100px;">
+			<div class="content">
+				<!--导航Start-->
+				<div class="layui-collapse">
+					<div class="layui-colla-item">
+						<a href="../Me.html">
+							<h2 class="layui-colla-title  ">学习兴趣</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Order.html">
+							<h2 class="layui-colla-title ">我的订单</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="">
+							<h2 class="layui-colla-title layui-colla-title-this">我的收藏</h2>
+						</a>
+
+					</div>
+					
+					<div class="layui-colla-item">
+						<a href="Message-center.html">
+							<h2 class="layui-colla-title">消息中心</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Sign-in and shop.html">
+							<h2 class="layui-colla-title">签到赢积分</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="PersonInfoEdit.html">
+							<h2 class="layui-colla-title">设置</h2>
+						</a>
+
+					</div>
+
+					<div class="layui-colla-item">
+						<a href="TeachrtAdmission.html">
+							<h2 class="layui-colla-title">老师入驻</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Contact.html">
+							<h2 class="layui-colla-title">联系小艺</h2>
+						</a>
+
+					</div>
+					
+				</div>
+				<!--导航END -->
+				<!--layui-show为默认打开，现在是全部关闭手风琴，呈折叠状态-->
+
+				<div class="Me-body">
+					<div class="Collection">
+						<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+							<ul class="layui-tab-title">
+								<li class="layui-this"><span id="">
+									课程
+								</span></li>
+								<li>机构</li>
+								<li>资讯</li>
+								
+							</ul>
+							<div class="layui-tab-content" >
+								<div class="layui-tab-item layui-show">
+									<div class="Collection-class">
+										<div class="Collection-class01 del1">
+												<a href="">
+													<div class="Collection-class-img">
+														<img src="../img/class/class02.png"/>
+														<div class="Collection-class-xuanze">
+															<a class="del1">删除</a>
+														</div>
+													</div>
+													<h3>PS创意影像合成案例教程PS创意影像合成</h3>
+													<div class="Collection-class02">
+														<span ><div class="test1"></div></span>
+														<span >	156人学过</span>
+													</div>
+	
+	
+												</a>
+										</div>
+										<div class="Collection-class01 del2">
+											<a href="">
+											<div class="Collection-class-img">
+												<img src="../img/class/class01.png"/>
+												<div class="Collection-class-xuanze">
+													<a class="del2">删除</a>
+												</div>
+											</div>
+											<h3>后现代注意艺术特征</h3>
+											<div class="Collection-class02">
+												<span ><div class="test1"></div></span>
+												<span >	156人学过</span>
+											</div>
+
+
+											</a>
+										</div>
+										<div class="Collection-class01 del3">
+											<a href="">
+											<div class="Collection-class-img">
+												<img src="../img/class/class04.png"/>
+												<div class="Collection-class-xuanze">
+													<a class="del3">删除</a>
+												</div>
+											</div>
+											<h3>传统书法的三个功能</h3>
+											<div class="Collection-class02">
+												<span ><div class="test1"></div></span>
+												<span >	156人学过</span>
+											</div>
+
+
+											</a>
+										</div>
+										<div class="Collection-class01 del4">
+											<a href="">
+											<div class="Collection-class-img">
+												<img src="../img/class/class03.png"/>
+												<div class="Collection-class-xuanze">
+													<a class="del4">删除</a>
+												</div>
+											</div>
+											<h3>周四从的荷花主题创作</h3>
+											<div class="Collection-class02">
+												<span ><div class="test1"></div></span>
+												<span >	156人学过</span>
+											</div>
+
+
+											</a>
+										</div>
+										<div class="Collection-class01 del5">
+											<a href="">
+											<div class="Collection-class-img">
+												<img src="../img/class/class01.png"/>
+												<div class="Collection-class-xuanze">
+													<a class="del5">删除</a>
+												</div>
+											</div>
+											<h3>建筑公共化的实践</h3>
+											<div class="Collection-class02">
+												<span ><div class="test1"></div></span>
+												<span >	156人学过</span>
+											</div>
+
+
+											</a>
+										</div>
+										<div class="Collection-class01 del6">
+											<a href="">
+											<div class="Collection-class-img">
+												<img src="../img/class/class02.png"/>
+												<div class="Collection-class-xuanze">
+													<a class="del6">删除</a>
+												</div>
+											</div>
+											<h3>文化自信从何而来</h3>
+											<div class="Collection-class02">
+												<span ><div class="test1"></div></span>
+												<span >	156人学过</span>
+											</div>
+
+
+											</a>
+										</div>
+										
+									</div>
+									
+									<script>
+										/*删除收藏的div，因为没有连接后台，所以先做示范*/
+										$(document).ready(function(){
+										  $(".del1").click(function(){
+										    $(".del1").remove();
+										  });
+										});
+										$(document).ready(function(){
+										  $(".del2").click(function(){
+										    $(".del2").remove();
+										  });
+										});
+										$(document).ready(function(){
+										  $(".del3").click(function(){
+										    $(".del3").remove();
+										  });
+										});
+										$(document).ready(function(){
+										  $(".del4").click(function(){
+										    $(".del4").remove();
+										  });
+										});
+										$(document).ready(function(){
+										  $(".del5").click(function(){
+										    $(".del5").remove();
+										  });
+										});
+										$(document).ready(function(){
+										  $(".del6").click(function(){
+										    $(".del6").remove();
+										  });
+										});
+									</script>
+										<script type="text/javascript">
+											layui.use(['rate'], function(){
+ 											 var rate = layui.rate;
+											  rate.render({
+											    elem: '.test1'
+											    ,value: 3.5
+											    ,half: true,
+											    theme: '#24B658',
+											    readonly: true
+											  })
+											})
+										</script>
+									
+									
+								</div>
+								<div class="layui-tab-item">
+									<div class="Collection-Mechanism">
+										<div class="Mechanism">
+											<div class="Mechanism-img">
+												<img src="../img/Mechanism/mechanism01.png"/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="layui-tab-item">内容3</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					//注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
+					layui.use('element', function() {
+						var element = layui.element;
+
+						//…
+					});
+				</script>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div class="footer">
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

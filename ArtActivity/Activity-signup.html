@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>打开视觉新维度-宅设会第十四期</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/modules/layer/default/layer.css"/>
+		<script type="text/javascript"src="../js/layui.js">		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+<div class="content">
+			<div class="fanhui">
+				<h4><a href="Activity001.html"><span>&lt;</span>&nbsp;打开视觉新维度-宅设会第十四期</a></h4>
+			</div>
+			<!--票种信息Statr -->
+			<div class="layui-form">
+				<h3><span>票种信息</span></h3>
+				<table class="layui-table">
+					<colgroup>
+						<col width="350">
+						<col width="150">
+						<col width="100">
+						<col width="100">
+						<col width="300" />
+						<col width="350" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>活动名称</th>
+							<th>票种名称</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>活动时间</th>
+							<th>活动地址</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>打开视觉新维度-宅设会第十四期</td>
+							<td>普通票
+								<br />
+								<span>( 剩余732张 )</span>
+							</td>
+							<td>0.0</td>
+							<td>1</td>
+							<td>2018-10-27 14:00 ~ 2018-10-27 17:00</td>
+							<td>广东深圳大学南校区计算机与软件学院一楼报告厅</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--票种信息END -->
+				
+			<!--填写报名信息statr-->
+			<div class="layui-form">
+				<h3><span>填写报名信息</span></h3>
+				<form class="layui-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label">姓名</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" required lay-verify="required" placeholder="请输入名字" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					
+					<div class="layui-form-item">
+						<label class="layui-form-label">手机</label>
+						<div class="layui-input-block">
+							<input name="phone" class="layui-input" type="tel" autocomplete="off" placeholder="请输入手机" lay-verify="phone"/>
+						</div>
+					</div>
+					 
+
+
+								
+					
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">备注</label>
+						<div class="layui-input-block">
+							<textarea name="desc" placeholder="请输入您的备注" class="layui-textarea" style="width: 600px;"></textarea>
+						</div>
+					</div>
+					
+					
+					
+					
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button  class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+
+				<script>
+					//Demo
+					layui.use('form', function() {
+						var form = layui.form;
+
+						//监听提交
+						form.on('submit(formDemo)', function(data) {
+							layer.msg(JSON.stringify(data.field));
+							return false;
+						});
+					});
+				</script>
+
+			</div>
+			<!--填写报名信息END-->
+		
+			<!--报名成功弹窗Start-->
+			<div class="baoming-Success">
+				
+				<script type="text/javascript" src="js/jquery-3.1.1.min.js">		</script>
+				<script type="text/javascript" src="js/lay/modules/layer.js">		</script>
+				<script type="text/javascript">
+					 $('#test1').on('click', function(){
+						    layer.open({
+						      type: 1,
+						      area: ['600px', '360px'],
+						      shadeClose: true, //点击遮罩关闭
+						      content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+						    });
+						  });
+				</script>
+					</div>
+			<!--报名成功弹窗End-->
+		</div>
+
+		<div class="footer ">
+			<div class="footer-about ">
+				<ul>
+					<li>
+						<a href=" ">关于我们</a>
+					</li>
+					<li>
+						<a href=" ">商务合作</a>
+					</li>
+					<li>
+						<a href=" ">在线留言</a>
+					</li>
+					<li>
+						<a href=" ">联系我们</a>
+					</li>
+					<li>
+						<a href=" ">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat ">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact ">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>活动评价</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<script type="text/javascript" src="../js/layui.js">		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">		</script>
+	</head>
+	<body style="background: #EEEEEE;">
+
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+		<div class="Mechanism-Me">
+			<!--竖型导航S-->
+			<center>
+				<dl class="list_dl">
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>数据看板</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd" style="display: block;">
+						<ul>
+							<li class="list_li" ><a href="Me.html" s>看板总览</a></li>
+							<li class="list_li"><a href="fansdata.html">粉丝数据</a></li>
+							<li class="list_li"><a href="Touristdata.html">游客数据</a></li>
+							<li class="list_li"><a href="Classdata.html">课程数据</a></li>
+							<li class="list_li"><a href="Newdata.html">资讯数据</a></li>
+							<li class="list_li"><a href="Activitydata.html" style="color: #F63232;">活动数据</a></li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>待回复</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li"><a href="ClassReply.html">课程交流</a></li>
+							<li class="list_li"><a href="Newevaluate.html">资讯评价</a></li>
+							<li class="list_li"><a href="Activityevaluate.html">活动评价</a></li>
+							<li class="list_li"><a href="BBSvaluate.html">社区交流</a></li>
+							<li class="list_li"><a href="Platform message.html">私信消息</a></li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我的作品</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li"><a href="MyClass.html">我的课程</a></li>
+							<li class="list_li"><a href="MyNews.html">我的资讯</a></li>
+							<li class="list_li"><a href="MyActivity.html">我的活动</a></li>
+							<li class="list_li"><a href="MyBBS.html">我的社区</a></li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我的直播</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">ready</li>
+							<li class="list_li">on</li>
+							<li class="list_li">off</li>
+							<li class="list_li">bind</li>
+							<li class="list_li">one</li>
+							<li class="list_li">trigger</li>
+							<li class="list_li">hover</li>
+							<li class="list_li">click</li>
+							<li class="list_li">focus</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+							<span class="_after"></span>
+							<p>资料更改</p>
+							<i class="list_dt_icon"></i>
+						</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">$.ajax</li>
+							<li class="list_li">$.get</li>
+							<li class="list_li">$.getJSON</li>
+							<li class="list_li">$.getScript</li>
+							<li class="list_li">$.post</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>关于我们</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">show</li>
+							<li class="list_li">hide</li>
+							<li class="list_li">toggle</li>
+							<li class="list_li">slideDown</li>
+							<li class="list_li">slideUp</li>
+							<li class="list_li">slideToggle</li>
+							<li class="list_li">fadeIn</li>
+							<li class="list_li">fadeOut</li>
+							<li class="list_li">fadeTo</li>
+							<li class="list_li">fadeToggle</li>
+							<li class="list_li">stop</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我要发布</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li"><a href="EstablishClass.html">发布课程</a></li>
+							<li class="list_li"><a href="EstablishNews.html" >发布资讯</a></li>
+							<li class="list_li"><a href="EstablishActivity.html">发布活动</a></li>
+						</ul>
+					</dd>
+				</dl>
+
+				<script type="text/javascript">
+					$(".list_dt").on("click", function() {
+						$('.list_dd').stop();
+						$(this).siblings("dt").removeAttr("id");
+						if($(this).attr("id") == "open") {
+							$(this).removeAttr("id").siblings("dd").slideUp();
+						} else {
+							$(this).attr("id", "open").next().slideDown().siblings("dd").slideUp();
+						}
+					});
+				</script>
+			</center>
+			<!--竖型导航E-->
+
+			<!--广播S-->
+			<div class="Radio-broadcast">
+				<a href="">
+					<h3>
+						<img src="../img/tubiao/tongzhi.png"/>
+						艺术一刻钟平台公告：打击发布低俗、虚假标题和内容的行为
+						<span>更多<img src="../img/tubiao/open.png" alt="" /></span>
+					</h3>
+				</a>
+			</div>
+			<!--广播E-->
+
+			<!--活动评价S-->
+			<div class="Activity-valuate">
+				<table class="layui-table" lay-skin="nob">
+					<colgroup>
+						<col width="250">
+						<col width="200">
+						<col width="100">
+						<col width="100"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>活动标题</th>
+							<th>评论</th>
+							
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>书画鉴赏中的真伪辩心</td>
+							<td>10</td>
+							<td><a href="ActivityReply.html">查看</a></td>
+						</tr>
+						<tr>
+							<td>书画鉴赏中的真伪辩心</td>
+							<td>10</td>
+							<td><a href="ActivityReply.html">查看</a></td>
+						</tr>
+						<tr>
+							<td>书画鉴赏中的真伪辩心</td>
+							<td>10</td>
+							<td><a href="ActivityReply.html">查看</a></td>
+						</tr>
+						<tr>
+							<td>书画鉴赏中的真伪辩心</td>
+							<td>10</td>
+							<td><a href="ActivityReply.html">查看</a></td>
+						</tr>
+						
+						<tr>
+							<td>书画鉴赏中的真伪辩心</td>
+							<td>10</td>
+							<td><a href="ActivityReply.html">查看</a></td>
+						</tr>
+						<tr>
+							<td>书画鉴赏中的真伪辩心</td>
+							<td>10</td>
+							<td><a href="ActivityReply.html">查看</a></td>
+						</tr>
+						<tr>
+							<td>书画鉴赏中的真伪辩心</td>
+							<td>10</td>
+							<td><a href="ActivityReply.html">查看</a></td>
+						</tr>
+					</tbody>
+				</table>
+			
+			</div>
+			
+			<!--活动评价E-->
+			
+
+		</div>
+	</body>
+
+</html>

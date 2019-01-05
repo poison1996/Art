@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/layui.js">
+		</script>
+	</head>
+
+	<body>
+
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+		<div class="content">
+			
+			
+			<div class="big-shell">
+				<div class="big-shell01">
+					<a href="Artwenzhang/wenzhang002.html">
+						<img src="img/xinwen/01.jpg" />
+						<p>他是中国工笔画金奖得主，60多幅作品展现其创作轨迹</p>
+					</a>
+				</div>
+				<div class="big-shell02">
+					<a href="">
+						<img src="img/xinwen/02.jpg" />
+						<p>雷军的小米，救得了甲醛房里的年轻人吗？</p>
+					</a>
+				</div>
+				<div class="big-shell02">
+					<a href="">
+						<img src="img/xinwen/03.jpg" />
+						<p>请爱我，2018</p>
+					</a>
+				</div>
+
+			</div>
+			
+			
+			<div class="Art-shell" >
+				
+				<!--自己的-->
+				<div class="my-shell" >
+					
+				<!--拾贝分类 -->
+					<div class="shell-fenlei">
+						<ul>
+							<li><a href="">全部</a></li>
+							<li><a href="">书法</a></li>
+							<li><a href="">绘画</a></li>
+							<li><a href="">雕塑</a></li>
+							<li><a href="">建筑</a></li>
+							<li><a href="">舞蹈</a></li>
+							<li><a href="">文学</a></li>
+							<li><a href="">戏剧</a></li>
+							<li><a href="">电影</a></li>
+							<li><a href="">其他</a></li>
+							<li><a href="">国家艺术基金项目</a></li>
+						</ul>
+					</div>
+					<div class="layui-row">
+						<div class="layui-col-md12">
+							<div class="xinwentupian">
+								<a href="Artwenzhang/wenzhang001.html"><img src="img/xinwen/04.jpg"/></a>
+							</div>
+							
+							<div class="shell-xinwen">
+								<h3><a href="">这个星期，我很高兴，谈谈中国制造的2件小事</a></h3>
+								<span>阿里叫做神经网络芯片，其实就是我们常说的AI芯片。神经网络处理芯片这个名字，显然是跟着苹果取的，苹果手机目前的面部识别和FACE ID功能</span>
+								<h4 >
+									<a href="Artwenzhang/wenzhang001.html"><img src="img/Mechanism/mechanism01.png"/>
+									<span >格瑞魔法学校 </span>
+									<span>165评</span>
+									</a>
+									<span class="xinwen-time">09-10 12:00</span>
+								</h4>
+							</div>
+							
+						</div>
+						
+						<div class="layui-col-md12">
+							<div class="xinwentupian">
+								<a href=""><img src="img/xinwen/05.jpg"/></a>
+							</div>
+							
+							<div class="shell-xinwen">
+								<h3><a href="">半导体“游击队”比特大陆</a></h3>
+								<span>比特大陆终于正式交表，这家依靠虚拟货币发家的科技公司“新秀”，终于如传言那样走向了上市。</span>
+								<h4 >
+									<a href=""><img src="img/Mechanism/mechanism01.png"/>
+									<span >清风美院</span>
+									<span>165评</span>
+									</a>
+									<span class="xinwen-time">09-10 12:00</span>
+								</h4>
+							</div>
+							
+						</div>
+						
+						<div class="layui-col-md12">
+							<div class="xinwentupian">
+								<a href=""><img src="img/xinwen/04.jpg"/></a>
+							</div>
+							
+							<div class="shell-xinwen">
+								<h3><a href="">Google 20年历史上最赞的涂鸦</a></h3>
+								<span>在Google的20岁生日之际，Google官方Blog发文回顾了在过去的20年中最有趣的Doodles。</span>
+								<h4 >
+									<a href=""><img src="img/Mechanism/mechanism01.png"/>
+									<span >亚美艺术馆</span>
+									<span>165评</span>
+									</a>
+									<span class="xinwen-time">09-10 12:00</span>
+								</h4>
+							</div>
+							
+						</div>
+						
+						<div class="layui-col-md12">
+							<div class="xinwentupian">
+								<a href=""><img src="img/xinwen/06.jpg"/></a>
+							</div>
+							
+							<div class="shell-xinwen">
+								<h3><a href="">硅谷是个什么谷（第一章）：天天天蓝</a></h3>
+								<span>这天蓝得清纯、蓝得理直气壮，远处淡近处深，携裹着白云，像明信片上PS过的图。虽然已经在夏威夷看了好几天蓝天，但程悦欣此刻还是望着飞机场外愣神</span>
+								<h4 >
+									<a href=""><img src="img/Mechanism/mechanism01.png"/>
+									<span >虎皮妈的夜航船©</span>
+									<span>165评</span>
+									</a>
+									<span class="xinwen-time">09-10 12:00</span>
+								</h4>
+							</div>
+							
+						</div>
+						
+						<div class="layui-col-md12">
+							<div class="xinwentupian">
+								<a href=""><img src="img/xinwen/07.jpg"/></a>
+							</div>
+							
+							<div class="shell-xinwen">
+								<h3><a href="">中国小伙的CVPR 18论文遭质疑，背后发生了什么？</a></h3>
+								<span>国庆前的这场学术风波，比以往时候来得都猛一些。</span>
+								<h4 >
+									<a href=""><img src="img/Mechanism/mechanism01.png"/>
+									<span >亚美艺术馆</span>
+									<span>165评</span>
+									</a>
+									<span class="xinwen-time">09-10 12:00</span>
+								</h4>
+							</div>
+							
+						</div>
+						
+						
+						
+						<div class="layui-col-md12">
+							<div id="demo0"></div>
+							<script>
+								layui.use(['laypage', 'layer'], function(){
+								  var laypage = layui.laypage
+								  ,layer = layui.layer;
+								  
+								  //总页数低于页码总数
+								  laypage.render({
+								    elem: 'demo0'
+								    ,count: 500 //数据总数
+								  });
+								 
+								  
+								  
+								});
+								</script>
+						</div>
+					</div>
+				
+					
+				</div>
+			
+				<!--友情网站-->
+				<div class="youqing-shell">
+					<h3>友情资讯</h3>
+					<h3><a href="">AI翻译替代人工，难！同传译员：饭碗稳得很</a></h3>
+					<h3><a href="">一边药企巨头裁员，另一边 AI+药物研发企业频获投，人工智能的进击来袭</a></h3>
+					<h3><a href="">山西人的山河气概哪去了？</a></h3>
+					<h3><a href="">做空特斯拉</a></h3>
+					<h3><a href="">以命换钱：一个底层青年的搏命逆袭</a></h3>
+					<h3><a href="">海外医疗：送出去背后的挑战</a></h3>
+					<h3><a href="">化验单上的“血小板”，你真的了解吗</a></h3>
+					<h3><a href="">怎样理解B站的社区生态与内容策略</a></h3>
+					<h3><a href="">B站离不开游戏</a></h3>
+					<h3><a href="">中国不配有好游戏？</a></h3>
+					<h3><a href="">湖南卫视，“妖孽”二十年</a></h3>
+				</div>
+				
+			</div>
+			
+			
+			
+			
+		</div>
+
+		
+
+		<div class="footer ">
+			<div class="footer-about ">
+				<ul>
+					<li>
+						<a href=" ">关于我们</a>
+					</li>
+					<li>
+						<a href=" ">商务合作</a>
+					</li>
+					<li>
+						<a href=" ">在线留言</a>
+					</li>
+					<li>
+						<a href=" ">联系我们</a>
+					</li>
+					<li>
+						<a href=" ">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat ">
+					<ul>
+						<li>微信</li>
+						<li><img src="img/QR/Wechar.jpg " /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact ">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人作品</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<script  src="../js/layui.js"></script>
+		<script src="../js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+		<div class="PersonalWorks">
+			<div class="PersonalWork">
+				<div class="PersonalWork-xinxi">
+					<h2>参赛作品标题</h2>
+					<p>
+						<span>序号：123456</span>
+						<span class="layui-breadcrumb" lay-separator="|">
+						  <a>123<img src="../img/tubiao/dianzan.png"/></a>
+						  <a>4567<img src="../img/tubiao/chakan.png"/></a>
+						  <a>99<img src="../img/tubiao/zhuangfa.png"/></a>
+						</span>
+					</p>
+				</div>
+				<div class="PersonalWork-zuozhe">
+					<p><img src="../img/Teacher/TeacherSmalltitle02.jpg"/><span>作者姓名</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="PersonalWork-content">
+				<div class="PersonalWork-content-wenzi">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quidem iste non nesciunt dolorum maxime cumque ea autem deleniti quod vero ex vitae enim a obcaecati atque delectus neque! Esse.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dignissimos voluptas magnam quo saepe! Dolore officiis minima molestias odio minus perferendis numquam libero perspiciatis officia id repudiandae ea dolorem eius!
+				</div>
+				<div class="PersonalWork-content-img">
+					<img src="../img/Activity/13.png"/>
+				</div>
+			</div>
+			
+			<div class="PersonalWork-jiaohu">
+				<div class="PersonalWork-toupiao">
+					<button class="PersonalWork-toupiao"><img src="../img/Activity/vote.png"/></button>
+					<script type="text/javascript">
+							$(document).ready(function(){
+								var onOff=true;
+								var div=$(".PersonalWork-toupiao");
+								div.click(function(){
+									if (div.onOff){
+										div.css({"background":'#555555'});
+										div.onOff=false;
+									}else{
+										div.css({"background":'#555555'});
+										div.onOff=false;
+									}
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+		
+	</body>
+</html>

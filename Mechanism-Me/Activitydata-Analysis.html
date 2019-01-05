@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>活动数据-数据分析</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript"src="../js/layui.js">		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">		</script>
+		<script type="text/javascript" src="../js/echarts-all.js">		</script>
+	</head>
+	<body style="background: #EEEEEE;">
+
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item ">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+
+		</div>
+
+		<div class="Mechanism-Me">
+			<!--竖型导航S-->
+			<center>
+				<dl class="list_dl">
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>数据看板</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd" style="display: block;">
+						<ul>
+							<li class="list_li" ><a href="Me.html" s>看板总览</a></li>
+							<li class="list_li"><a href="fansdata.html">粉丝数据</a></li>
+							<li class="list_li"><a href="Touristdata.html">游客数据</a></li>
+							<li class="list_li"><a href="Classdata.html">课程数据</a></li>
+							<li class="list_li"><a href="Newdata.html">资讯数据</a></li>
+							<li class="list_li"><a href="Activitydata.html" style="color: #F63232;">活动数据</a></li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>待回复</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li"><a href="ClassReply.html">课程交流</a></li>
+							<li class="list_li"><a href="Newevaluate.html">资讯评价</a></li>
+							<li class="list_li"><a href="Activityevaluate.html">活动评价</a></li>
+							<li class="list_li"><a href="BBSvaluate.html">社区交流</a></li>
+							<li class="list_li"><a href="Platform message.html">私信消息</a></li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我的作品</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li"><a href="MyClass.html">我的课程</a></li>
+							<li class="list_li"><a href="MyNews.html">我的资讯</a></li>
+							<li class="list_li"><a href="MyActivity.html">我的活动</a></li>
+							<li class="list_li"><a href="MyBBS.html">我的社区</a></li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我的直播</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">ready</li>
+							<li class="list_li">on</li>
+							<li class="list_li">off</li>
+							<li class="list_li">bind</li>
+							<li class="list_li">one</li>
+							<li class="list_li">trigger</li>
+							<li class="list_li">hover</li>
+							<li class="list_li">click</li>
+							<li class="list_li">focus</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+							<span class="_after"></span>
+							<p>资料更改</p>
+							<i class="list_dt_icon"></i>
+						</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">$.ajax</li>
+							<li class="list_li">$.get</li>
+							<li class="list_li">$.getJSON</li>
+							<li class="list_li">$.getScript</li>
+							<li class="list_li">$.post</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>关于我们</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">show</li>
+							<li class="list_li">hide</li>
+							<li class="list_li">toggle</li>
+							<li class="list_li">slideDown</li>
+							<li class="list_li">slideUp</li>
+							<li class="list_li">slideToggle</li>
+							<li class="list_li">fadeIn</li>
+							<li class="list_li">fadeOut</li>
+							<li class="list_li">fadeTo</li>
+							<li class="list_li">fadeToggle</li>
+							<li class="list_li">stop</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我要发布</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li"><a href="EstablishClass.html">发布课程</a></li>
+							<li class="list_li"><a href="EstablishNews.html" >发布资讯</a></li>
+							<li class="list_li"><a href="EstablishActivity.html">发布活动</a></li>
+						</ul>
+					</dd>
+				</dl>
+
+				<script type="text/javascript">
+					$(".list_dt").on("click", function() {
+						$('.list_dd').stop();
+						$(this).siblings("dt").removeAttr("id");
+						if($(this).attr("id") == "open") {
+							$(this).removeAttr("id").siblings("dd").slideUp();
+						} else {
+							$(this).attr("id", "open").next().slideDown().siblings("dd").slideUp();
+						}
+					});
+				</script>
+			</center>
+			<!--竖型导航E-->
+
+			<!--广播S-->
+			<div class="Radio-broadcast">
+				<a href="">
+					<h3>
+						<img src="../img/tubiao/tongzhi.png"/>
+						艺术一刻钟平台公告：打击发布低俗、虚假标题和内容的行为
+						<span>更多<img src="../img/tubiao/open.png" alt="" /></span>
+					</h3>
+				</a>
+			</div>
+			<!--广播E-->
+			
+			<!--活动数据S-->
+			<div class="listmanagement">
+				<h4><a href="Activitydata.html">活动数据</a>>数据分析</h4>
+				<h3>这是活动标题这是活动标题这是活动标题<span class="Activity-end">已结束</span></h3>
+				
+				<!--浏览波动图S-->
+				<div class="Activity-browsing">
+					<h3>浏览波动图
+						<p>
+							<span>999</span>浏览人数
+							<span>999</span>报名人数
+							<span>999</span>签到人数
+							<span>100%</span>签到率
+						</p>
+					</h3>
+					
+						<div id="Activity-borowsing">
+							<script type="text/javascript">
+								// 基于准备好的dom，初始化echarts图表
+								var myChart = echarts.init(document.getElementById('Activity-borowsing'));
+		
+								option = {
+		
+									tooltip: {
+										trigger: 'axis'
+									},
+		
+									/*先注释掉，后期再说
+									toolbox: {
+										show: true,
+										feature: {
+											
+											dataView: {
+												show: true,
+												readOnly: false
+											},
+											
+											restore: {
+												show: true
+											},
+											saveAsImage: {
+												show: true
+											}
+										},
+										
+									},
+									*/
+									calculable: true,
+									xAxis: [{
+										splitLine: {
+											show: false
+										},
+										type: 'category',
+										boundaryGap: false,
+										data: ['10-20', '10-21', '10-22', '10-23', '10-24', '10-25', '10-26', ]
+									}],
+									yAxis: [{
+										splitLine: {
+											show: true
+										},
+										type: 'value',
+										axisLabel: {
+											formatter: '{value}'
+										}
+									}],
+		
+									series: [{
+											name: '活动浏览数据',
+											type: 'line',
+											data: [756, 432, 531, 789, 666, 831, 723],
+											symbol: 'emptyCircle', //折线点设置为实心点
+											symbolSize: 5, //折线点的大小
+											itemStyle: {
+												normal: {
+													color: "#386db3", //折线点的颜色
+													lineStyle: {
+														color: "#1086FF" //折线的颜色
+													}
+												}
+											},
+		
+											markPoint: {
+												data: [{
+														type: 'max',
+														name: '最大值',
+		
+													},
+													{
+														type: 'min',
+														name: '最小值',
+		
+													}
+												]
+											},
+											markLine: {
+												data: [{
+													type: 'average',
+													name: '平均值',
+		
+												}]
+											}
+		
+										},
+		
+									]
+		
+								};
+		
+								// 为echarts对象加载数据 
+								myChart.setOption(option);
+							</script>
+
+				</div>
+
+				</div>
+				<!--浏览波动图E -->
+				
+				<!--报名趋势图S-->
+				<div class="Activity-signup-trend">
+					<h3>报名趋势图</h3>
+					
+					<div id="Activity-signup-trend"></div>
+								<script type="text/javascript">
+								// 基于准备好的dom，初始化echarts图表
+								var myChart = echarts.init(document.getElementById('Activity-signup-trend'));
+		
+								option = {
+		
+									tooltip: {
+										trigger: 'axis'
+									},
+		
+									/*先注释掉，后期再说
+									toolbox: {
+										show: true,
+										feature: {
+											
+											dataView: {
+												show: true,
+												readOnly: false
+											},
+											
+											restore: {
+												show: true
+											},
+											saveAsImage: {
+												show: true
+											}
+										},
+										
+									},
+									*/
+									calculable: true,
+									xAxis: [{
+										splitLine: {
+											show: false
+										},
+										type: 'category',
+										boundaryGap: false,
+										data: ['10-20', '10-21', '10-22', '10-23', '10-24', '10-25', '10-26', ]
+									}],
+									yAxis: [{
+										splitLine: {
+											show: true
+										},
+										type: 'value',
+										axisLabel: {
+											formatter: '{value}'
+										}
+									}],
+		
+									series: [{
+											name: '活动浏览数据',
+											type: 'line',
+											data: [756, 432, 531, 789, 666, 831, 723],
+											symbol: 'emptyCircle', //折线点设置为实心点
+											symbolSize: 5, //折线点的大小
+											itemStyle: {
+												normal: {
+													color: "#386db3", //折线点的颜色
+													lineStyle: {
+														color: "#1086FF" //折线的颜色
+													}
+												}
+											},
+		
+											markPoint: {
+												data: [{
+														type: 'max',
+														name: '最大值',
+		
+													},
+													{
+														type: 'min',
+														name: '最小值',
+		
+													}
+												]
+											},
+											markLine: {
+												data: [{
+													type: 'average',
+													name: '平均值',
+		
+												}]
+											}
+		
+										},
+		
+									]
+		
+								};
+		
+								// 为echarts对象加载数据 
+								myChart.setOption(option);
+							</script>
+
+				</div>
+				
+				<!--报名趋势图E -->
+				
+			
+			
+			
+			</div>
+			<!--活动数据E -->
+		
+			
+		
+
+		</div>
+	</body>
+</html>

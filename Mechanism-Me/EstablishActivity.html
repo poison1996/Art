@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>创建活动</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/modules/layer/default/layer.css" />
+		<script type="text/javascript" src="../js/layui.js">
+		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">
+		</script>
+	</head>
+
+	<body style="background: #EEEEEE;">
+
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+		<div class="Mechanism-Me">
+			<!--竖型导航S-->
+			<center>
+				<dl class="list_dl">
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>数据看板</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">
+								<a href="Me.html">看板总览</a>
+							</li>
+							<li class="list_li">
+								<a href="fansdata.html">粉丝数据</a>
+							</li>
+							<li class="list_li">
+								<a href="Touristdata.html">游客数据</a>
+							</li>
+							<li class="list_li">
+								<a href="Classdata.html">课程数据</a>
+							</li>
+							<li class="list_li">
+								<a href="Newdata.html">资讯数据</a>
+							</li>
+							<li class="list_li">
+								<a href="Activitydata.html">活动数据</a>
+							</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>待回复</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">
+								<a href="ClassReply.html">课程交流</a>
+							</li>
+							<li class="list_li">
+								<a href="Newevaluate.html">资讯评价</a>
+							</li>
+							<li class="list_li">
+								<a href="Activityevaluate.html">活动评价</a>
+							</li>
+							<li class="list_li">
+								<a href="BBSvaluate.html">社区交流</a>
+							</li>
+							<li class="list_li">
+								<a href="Platform message.html">私信消息</a>
+							</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我的作品</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">
+								<a href="MyClass.html">我的课程</a>
+							</li>
+							<li class="list_li">
+								<a href="MyNews.html">我的资讯</a>
+							</li>
+							<li class="list_li">
+								<a href="MyActivity.html">我的活动</a>
+							</li>
+							<li class="list_li">
+								<a href="MyBBS.html">我的社区</a>
+							</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我的直播</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">ready</li>
+							<li class="list_li">on</li>
+							<li class="list_li">off</li>
+							<li class="list_li">bind</li>
+							<li class="list_li">one</li>
+							<li class="list_li">trigger</li>
+							<li class="list_li">hover</li>
+							<li class="list_li">click</li>
+							<li class="list_li">focus</li>
+						</ul>
+					</dd>
+
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我的老师</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">我的老师</li>
+
+						</ul>
+					</dd>
+					<dt class="list_dt">
+							<span class="_after"></span>
+							<p>资料更改</p>
+							<i class="list_dt_icon"></i>
+						</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">$.ajax</li>
+							<li class="list_li">$.get</li>
+							<li class="list_li">$.getJSON</li>
+							<li class="list_li">$.getScript</li>
+							<li class="list_li">$.post</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>关于我们</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd">
+						<ul>
+							<li class="list_li">show</li>
+							<li class="list_li">hide</li>
+							<li class="list_li">toggle</li>
+							<li class="list_li">slideDown</li>
+							<li class="list_li">slideUp</li>
+							<li class="list_li">slideToggle</li>
+							<li class="list_li">fadeIn</li>
+							<li class="list_li">fadeOut</li>
+							<li class="list_li">fadeTo</li>
+							<li class="list_li">fadeToggle</li>
+							<li class="list_li">stop</li>
+						</ul>
+					</dd>
+					<dt class="list_dt">
+						<span class="_after"></span>
+						<p>我要发布</p>
+						<i class="list_dt_icon"></i>
+					</dt>
+					<dd class="list_dd" style="display: block;">
+						<ul>
+							<li class="list_li">
+								<a href="EstablishClass.html">发布课程</a>
+							</li>
+							<li class="list_li">
+								<a href="EstablishNews.html">发布资讯</a>
+							</li>
+							<li class="list_li">
+								<a href="EstablishActivity.html" style="color: #F63232;">发布活动</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+
+				<script type="text/javascript">
+					$(".list_dt").on("click", function() {
+						$('.list_dd').stop();
+						$(this).siblings("dt").removeAttr("id");
+						if($(this).attr("id") == "open") {
+							$(this).removeAttr("id").siblings("dd").slideUp();
+						} else {
+							$(this).attr("id", "open").next().slideDown().siblings("dd").slideUp();
+						}
+					});
+				</script>
+			</center>
+			<!--竖型导航E-->
+
+			<!--广播S-->
+			<div class="Radio-broadcast">
+				<a href="">
+					<h3>
+						<img src="../img/tubiao/tongzhi.png"/>
+						艺术一刻钟平台公告：打击发布低俗、虚假标题和内容的行为
+						<span>更多<img src="../img/tubiao/open.png" alt="" /></span>
+					</h3>
+				</a>
+			</div>
+			<!--广播E-->
+
+			<!--发布活动S -->
+			<div class="EstablishActivity">
+				<h3>发布新活动</h3>
+				<hr/>
+				<form action="" method="post" class="layui-form" style="float: none;">
+
+					<div class="layui-form-item">
+						<label class="layui-form-label">活动名称:</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" lay-verify="required" placeholder="请输入活动名称，限制字数X" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<label class="layui-form-label">活动时间:</label>
+						<div class="layui-input-block">
+							<input type="datetime-local" style="width: 185px;" lay-verify="required" /> 至
+							<input type="datetime-local" style="width: 185px;" lay-verify="required" />
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<label class="layui-form-label">活动海报:</label>
+						<div class="layui-input-block">
+							<div class="layui-upload">
+								<div class="layui-upload-list">
+									<img class="layui-upload-img" id="demo1" >
+									<p id="demoText"></p>
+								</div>
+								<button type="button" class="layui-btn" id="test1" style="margin-top: -70%;margin-left: 100%;">上传海报</button>
+							</div>
+							
+							<div class="layui-form-mid layui-word-aux">温馨提示：1、 图片尺寸 1080*640，.jpg 或 .png格式，不超过 4M 2、精美海报有助于增加报名量，并有机会获得强力推荐！</div>
+							<script>
+								layui.use('upload', function() {
+									var $ = layui.jquery,
+										upload = layui.upload;
+
+									//普通图片上传
+									var uploadInst = upload.render({
+										elem: '#test1',
+										url: '/upload/',
+										before: function(obj) {
+											//预读本地文件示例，不支持ie8
+											obj.preview(function(index, file, result) {
+												$('#demo1').attr('src', result); //图片链接（base64）
+											});
+										},
+										done: function(res) {
+											//如果上传失败
+											if(res.code > 0) {
+												return layer.msg('上传失败');
+											}
+											//上传成功
+										},
+										error: function() {
+											//演示失败状态，并实现重传
+											var demoText = $('#demoText');
+											demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+											demoText.find('.demo-reload').on('click', function() {
+												uploadInst.upload();
+											});
+										}
+									});
+
+								});
+							</script>
+
+						</div>
+					</div>
+					
+					<div class="layui-form-item">
+						<label class="layui-form-label">活动性质:</label>
+						<div class="layui-input-block">
+							<input type="radio" name="sex" value="线上" title="线上" lay-ignore style="width: 50px;" >线上
+     						 <input type="radio" name="sex" value="线下" title="线下"  lay-ignore  style="width: 50px;" checked>线下
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">活动类型:</label>
+						<div class="layui-input-block">
+							<select name="Activitytype" lay-verify="required" >
+								<option value=""></option>
+								<option value="1">绘画</option>
+								<option value="2">书法</option>
+								<option value="3">音乐</option>
+								<option value="4">戏剧</option>
+								<option value="5">雕塑</option>
+								<option value="6">建筑</option>
+								<option value="7">舞蹈</option>
+								<option value="8">文学</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<label class="layui-form-label">活动人数:</label>
+						<div class="layui-input-block">
+							<input type="text" name="" id="" value="" required  oninput="value=value.replace(/[^\d]/g,'')" placeholder="请输入数字"/>
+						</div>
+					</div>
+
+					 <div class="layui-form-item">
+					    <div class="layui-input-block">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+					      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+					    </div>
+					  </div>
+					  <script>
+						//Demo
+						layui.use('form', function(){
+						  var form = layui.form;
+						  
+						  //监听提交
+						  form.on('submit(formDemo)', function(data){
+						    layer.msg(JSON.stringify(data.field));
+						    return false;
+						  });
+						});
+						</script>
+				</form>
+			</div>
+
+			<!--发布活动E-->
+
+		</div>
+	</body>
+
+</html>

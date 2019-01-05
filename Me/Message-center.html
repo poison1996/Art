@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>消息中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src="../js/layui.js">		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">		</script>
+		<style type="text/css">
+			.layui-tab-title{background: none; border-bottom: 1px solid #EEEEEE;}.layui-this{border-bottom: 2px solid #F63232;}.layui-tab-title>li{height: 33px; width: 120px;}
+		</style>
+	</head>
+	<body>
+			<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item ">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+			<div class="Me-xinxi">
+			<div class="content">
+				<!--修改头像-->
+				<div class="Me-xinxi2">
+
+					<img src="../img/Teacher/TeacherSmalltitle02.jpg" />
+					<a href="PersonInfoEdit.html">
+						<div class="ME-xinxin-titlexiugai">
+							<h3>修改头像</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="Me-xinxi3">
+					<h3>酱酱123</h3>
+					<span>这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介</span>
+				</div>
+
+				<div class="Me-QR">
+					<img src="../img/QR/Wechar.jpg" />
+				</div>
+
+			</div>
+		</div>
+
+			<div class="Me-bg"  style="padding-bottom: 100px;">
+			<div class="content" >
+				<!--导航Start-->
+				<div class="layui-collapse">
+					<div class="layui-colla-item">
+						<a href="../Me.html">
+							<h2 class="layui-colla-title  ">学习兴趣</h2></a>
+
+					</div>
+					<div class="layui-colla-item  ">
+							<a href="Order.html">
+							<h2 class="layui-colla-title ">我的订单</h2>
+							</a>
+							
+							
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Collection.html">
+							<h2 class="layui-colla-title">我的收藏</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Message-center.html">
+							<h2 class="layui-colla-title layui-colla-title-this" >消息中心</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Sign-in and shop.html">
+							<h2 class="layui-colla-title">签到赢积分</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="PersonInfoEdit.html">
+							<h2 class="layui-colla-title">设置</h2>
+						</a>
+
+					</div>
+
+					<div class="layui-colla-item">
+						<a href="TeachrtAdmission.html">
+							<h2 class="layui-colla-title">老师入驻</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Contact.html">
+							<h2 class="layui-colla-title">联系小艺</h2>
+						</a>
+
+					</div>
+					
+				</div>
+				<!--导航END -->
+				<!--layui-show为默认打开，现在是全部关闭手风琴，呈折叠状态-->
+
+				<div class="Me-body">
+					<!-- 内容主体区域 -->
+						<!--我的消息Stats-->
+						<div class="Me-Message">
+							<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+							<ul class="layui-tab-title">
+								<li class="layui-this">互动消息</li>
+								<li>平台消息</li>
+								
+								
+							</ul>
+							<div class="layui-tab-content" >
+								<!--互动消息Stars-->
+								<div class="layui-tab-item layui-show">
+									<div class="message01">
+										<div class="message2">
+											<div class="message3">
+												<img src="../img/Teacher/TeacherSmalltitle01.jpg"/>
+											</div>
+											<div class="message4">
+												<span >
+													小王
+												</span>
+												回复了您在资讯 <b><a href="">《风雨飘摇中，海底捞能否成为投资避风港》</a></b>的评论
+												<span>
+													2018-10-10 12:10:23
+												</span>
+												
+											</div>
+											
+											<div class="message5">
+												<span >
+													<a href="javascript:;"  class="reply_btn">回复</a>
+												</span>	
+											</div>
+										</div>
+										<div class="message6">
+											相较于日益膨胀的重庆火锅品牌及高昂的价格，海底捞确实对于工薪阶层来说是物美价廉，还有谁和你说海底捞是高端消费了
+											相较于日益膨胀的重庆火锅品牌及高昂的价格，海底捞确实对于工薪阶层来说是物美价廉，还有谁和你说海底捞是高端消费了	
+										</div>
+										<div class="message7">
+											<span>
+												柳长风:
+											</span>
+											<br />
+											难道不是八合理更好吃点？？？？潮汕人表示不服
+										</div>
+									</div>
+									
+									<div class="message01">
+										<div class="message2">
+											<div class="message3">
+												<img src="../img/Teacher/TeacherSmalltitle01.jpg"/>
+											</div>
+											<div class="message4">
+												<span >
+													小王
+												</span>
+												回复了您在资讯 <b><a href="">《以版权为由惩治网络骚扰？“删除侵权内容”能成为反杠精良方吗》</a></b>的评论
+												<span>
+													2018-10-10 12:10:23
+												</span>
+												
+											</div>
+											
+											<div class="message5">
+												<span >
+													<a href="javascript:;"  class="reply_btn">回复</a>
+												</span>	
+											</div>
+										</div>
+										<div class="message6">
+											删除只能“治标不治本”
+										</div>
+										<div class="message7">
+											<span>
+												郭芙蓉:
+											</span>
+											<br />
+											有人的地方就有江湖
+										</div>
+									</div>
+									
+										<div class="message01">
+										<div class="message2">
+											<div class="message3">
+												<img src="../img/Teacher/TeacherSmalltitle01.jpg"/>
+											</div>
+											<div class="message4">
+												<span >
+													姬无命
+												</span>
+												评论了您在广场 <b><a href="">《葵花点穴手第五十八招式》</a></b>的评论
+												<span>
+													2018-10-10 12:10:23
+												</span>
+												
+											</div>
+											
+											<div class="message5">
+												<span >
+													<a href="javascript:;"  class="reply_btn">回复</a>
+												</span>	
+											</div>
+											
+											<div class="message6">
+											年轻人，慢慢来，反正你也追不上我
+											</div>
+											
+										</div>
+										
+									</div>
+							
+								</div>
+								<!--互动消息END-->
+								<!--平台消息Stars -->
+								<div class="layui-tab-item">
+										<div class="Platform-Message">
+											<div class="Platform-Message1">
+												<div class="Platform-Message2">
+													<img src="../img/tubiao/yi.png"/>
+												</div>	
+												<a href="">
+													<div class="Platform-Message3">
+														<h3>通知</h3>
+														<h4>公链101 | 不只是快，公链还要够灵活才能适应行业发展</h4>
+													</div>
+												</a>
+												
+												<div class="Platform-Message4">
+													<span id="">
+														2018-10-10 12:10:23
+													</span>
+												</div>
+											</div>
+											<div class="Platform-Message1">
+												<div class="Platform-Message2">
+													<img src="../img/tubiao/yi.png"/>
+												</div>	
+												<a href="">
+													<div class="Platform-Message3">
+														<h3>快报</h3>
+														<h4>人工智能领域的寡头战争（一）：争夺人才，手段频出</h4>
+													</div>
+												</a>
+												
+												<div class="Platform-Message4">
+													<span id="">
+														2018-10-10 12:10:23
+													</span>
+												</div>
+											</div>
+										</div>
+								</div>
+								<!--平台消息END-->			
+										
+						
+								<script type="text/javascript">
+									//消息回复框
+									$(function() {
+										//页面加载完毕后开始执行的事件
+										$(".reply_btn").click(function() {
+											$(".reply_textarea").remove();
+											$(this).parent().append("<div class='reply_textarea'><textarea name='' cols='125' rows='5'></textarea><br/><input type='submit' value='发表' /></div>");
+										});
+									});
+								</script>
+								
+								
+							</div>
+						</div>
+						</div>
+						<!--我的消息END-->
+				</div>
+				<script>
+					//注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
+					layui.use('element', function() {
+						var element = layui.element;
+
+						//…
+					});
+				</script>
+			</div>
+			</div>
+
+				<!--底部-->
+		<div class="footer"  >
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+	
+								
+	</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>打开视觉新维度-宅设会第十四期</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<script type="text/javascript" src="../js/layui.js">
+		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+	<div class="content">
+			<div class="fenxiang">
+				<ul>
+					<li>
+						<a href=""><img src="../img/tubiao/weibo-hui.png" onMouseOver="this.src='../img/tubiao/weibo-bai.png'" onMouseOut="this.src='../img/tubiao/weibo-hui.png'" /></a>
+					</li>
+					<li class="fenxiang-pengyouquan">
+						<a href="">
+							<img src="../img/tubiao/pengyouquan-hui.png" onmouseover="this.src='../img/tubiao/pengyouquan-bai.png'" onmouseout="this.src='../img/tubiao/pengyouquan-hui.png'" />
+							<img src="../img/tubiao/Art.png" class="fenxiang-QR" />
+						</a>
+					</li>
+					<li>
+						<a href=""><img src="../img/tubiao/kongjian.png" /></a>
+					</li>
+					<li>
+						<a href=""><img src="../img/tubiao/pinglun-hui.png" onmouseover="this.src='../img/tubiao/pinglun-bai.png'" onmouseout="this.src='../img/tubiao/pinglun-hui.png'" /></a>
+					</li>
+					<li>
+						<a href=""><img src="../img/tubiao/shouchang-hui.png" onmouseover="this.src='../img/tubiao/shouchang-bai.png'" onmouseout="this.src='../img/tubiao/shouchang-hui.png'" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="active-centent">
+
+				<div class="active-media">
+					<div class="active-media-img">
+						<img src="../img/Activity/001.jpg" />
+					</div>
+					<div class="active-media-xinxi">
+						<h3>打开视觉新维度-宅设会第十四期</h3>
+						<div class="active-time">
+							<img src="../img/tubiao/time.png" title="活动时间 " />
+							<span> 2018年10月14日 13:30 ～ 2018年10月14日 17:30</span>
+						</div>
+						<div class="active-place">
+							<img src="../img/tubiao/dizhi.png" title="活动地址" />
+							<span>广东深圳大学南校区计算机与软件学院一楼报告厅</span>
+						</div>
+						<div class="active-people">
+							<img src="../img/tubiao/renshu.png" title="活动名额" />
+							<span> 限额250人（已报名138）</span>
+						</div>
+						<div class="active-company">
+							<img src="../img/tubiao/jigou.png" title="活动发起人" />
+							<span><a href="">深圳市源创信息科技有限公司</a></span>
+						</div>
+						<div class="active-baoming">
+							<button class="baoming"><a href="Activity-signup.html">我要报名</a></button>
+							<!--收藏开始-->
+							<input class="shouchang" type="button" name="" id="" value="收藏" />
+
+							<script type="text/javascript">
+								$(document).ready(function() {
+									var onOff = true;
+									var div = $(".shouchang");
+									div.click(function() {
+										if(div.onOff) {
+											div.val("收藏");
+											div.css({
+												"background": '#D6DADD'
+											});
+											div.onOff = false;
+										} else {
+											div.css({
+												"background": '#D6DADD'
+											});
+											div.val("已收藏");
+											div.onOff = true;
+										}
+									});
+								});
+							</script>
+							<!--收藏结束 -->
+
+							<span> 4073 人浏览</span>
+							
+
+					</div>
+
+					</div>
+
+				</div>
+				
+				<div class="active">
+					<span>活动详情：</span>
+					<hr />
+					<div class="">
+						<img src="../img/Activity/002.jpg"/>
+					</div>
+					<!--文章评论区开始-->
+					<div class="article-pinglunqu">
+						<span>说点什么</span>
+
+						<form action="" class="layui-input-block">
+							<textarea placeholder="请输入评论" class="layui-textarea"></textarea>
+							<button  style="float: right;" class="layui-btn">提交评论</button>
+						</form>
+						<br />
+						
+						<!--用户评论区开始 -->
+						<span ><b>热门评论：</b></span>
+						
+						
+						
+						<div class="pl-box-wrap">
+							<div class="author-info">
+								<div class="author-yh-face">
+									<img src="../img/Teacher/TeacherSmalltitle01.jpg"/>
+								</div>
+								<div class="author-comment-name">
+									酱酱
+								</div>
+								<span class="comment-yh-time">
+									5小时前
+								</span>
+								
+								<!--动态点赞开始-->
+		
+									<div class="praise">
+										<span id="praise"><img src="../img/tubiao/zan.png" id="praise-img" /></span>
+										<span id="praise-txt">1455</span>
+										<span id="add-num"><em>+1</em></span>
+									</div>
+									<!--动态点赞结束-->
+									<script>
+										/* @author:Romey
+										 * 动态点赞
+										 * 此效果包含css3，部分浏览器不兼容（如：IE10以下的版本）
+										 */
+										$(function() {
+											$("#praise").click(function() {
+												var praise_img = $("#praise-img");
+												var text_box = $("#add-num");
+												var praise_txt = $("#praise-txt");
+												var num = parseInt(praise_txt.text());
+												if(praise_img.attr("src") == ("../img/tubiao/yizan.png")) {
+													$(this).html("<img src='../img/tubiao/zan.png' id='praise-img' class='animation' />");
+													praise_txt.removeClass("hover");
+													text_box.show().html("<em class='add-animation'>-1</em>");
+													$(".add-animation").removeClass("hover");
+													num -= 1;
+													praise_txt.text(num)
+												} else {
+													$(this).html("<img src='../img/tubiao/yizan.png' id='praise-img' class='animation' />");
+													praise_txt.addClass("hover");
+													text_box.show().html("<em class='add-animation'>+1</em>");
+													$(".add-animation").addClass("hover");
+													num += 1;
+													praise_txt.text(num)
+												}
+											});
+										})
+									</script>
+							</div>
+							<div class="pl-content">
+								棒棒哒！！！！	
+							</div>
+						</div>
+						<!--用户评论区结束-->
+					</div>
+					<!--文章评论区结束-->
+				</div>
+				
+				
+
+		</div>
+		<div class="right-xinxi">
+			<div class="author-face">
+				<img src="../img/Teacher/TeacherSmalltitle03.jpg" />
+			</div>
+
+			<div class="author-name">
+				<a href="">深圳市源创信息科技有限公司</a>
+			</div>
+			<div class="author-article-pl">
+				<!--关注开始-->
+				<input class="guanzhu" type="button" name="" id="" value="关注我" />
+
+				<script type="text/javascript">
+					$(document).ready(function() {
+						var onOff = true;
+						var div = $(".guanzhu");
+						div.click(function() {
+							if(div.onOff) {
+								div.val("关注");
+								div.css({
+									"background": '#D6DADD'
+								});
+								div.onOff = false;
+							} else {
+								div.css({
+									"background": '#D6DADD'
+								});
+								div.val("已关注");
+								div.onOff = true;
+							}
+						});
+					});
+				</script>
+				<!--关注结束 -->
+			</div>
+
+			<hr />
+			
+				
+			<div class="box-moder ">
+				<h3><span>&nbsp;</span>热门活动</h3>
+				<div class="hot-article">
+					<a href="">
+						<div class="hot-article-img">
+							<img src="../img/Activity/003.jpg" />
+						</div>
+						<span>新力量•中国泛农业投融资闭门对接会—深圳专场</span>
+						
+						
+					</a>
+				</div>
+
+				<hr />
+				<div class="hot-article">
+					<a href="">
+						<div class="hot-article-img">
+							<img src="../img/Activity/004.jpg" />
+						</div>
+						<span>【NLP摆脱矛盾心理】摆脱矛盾和纠结心理，让你不再迷茫</span>
+					</a>
+				</div>
+				<hr />
+
+				<div class="hot-article">
+					<a href="">
+						<div class="hot-article-img">
+							<img src="../img/Activity/005.jpg" />
+						</div>
+						<span>“反中医”运动89年：回顾与反思</span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<div class="go-top">
+			<a href="#"><img src="../img/tubiao/to-top.png" /></a>
+		</div>
+
+		<div class="footer ">
+			<div class="footer-about ">
+				<ul>
+					<li>
+						<a href=" ">关于我们</a>
+					</li>
+					<li>
+						<a href=" ">商务合作</a>
+					</li>
+					<li>
+						<a href=" ">在线留言</a>
+					</li>
+					<li>
+						<a href=" ">联系我们</a>
+					</li>
+					<li>
+						<a href=" ">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat ">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact ">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

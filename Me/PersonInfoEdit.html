@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>资料设置</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/modules/layer/default/layer.css" />
+		<script type="text/javascript" src="../js/layui.js">	</script>
+		<script type="text/javascript" src="../js/lay/modules/layer.js">	</script>
+		<style type="text/css">
+			.layui-tab-title {
+				background: none;
+				border-bottom: 1px solid #EEEEEE;
+			}
+			
+			.layui-this {
+				border-bottom: 2px solid #F63232;
+			}
+			
+			.layui-tab-title>li {
+				height: 33px;
+				width: 120px;
+			}
+			
+			.layui-upload-img {
+				width: 120px;
+				height: 120px;
+				border-radius: 100%;
+				margin-bottom: 20px;
+			}
+			
+			.layui-btn {
+				margin: auto;
+				font-size: 18px;
+				letter-spacing: 1px;
+			}
+			
+			.layui-input-block>input {
+				width: 200px;
+			}
+			.layui-form-item-sex>.layui-input-block>input{display: none;}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="../Timetable.html" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+		</div>
+		<div class="Me-xinxi">
+			<div class="content">
+				<!--修改头像-->
+				<div class="Me-xinxi2">
+
+					<img src="../img/Teacher/TeacherSmalltitle02.jpg" />
+					<a href="PersonInfoEdit.html">
+						<div class="ME-xinxin-titlexiugai">
+							<h3>修改头像</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="Me-xinxi3">
+					<h3>酱酱123</h3>
+					<span>这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介这是简介</span>
+				</div>
+
+				<div class="Me-QR">
+					<img src="../img/QR/Wechar.jpg" />
+				</div>
+
+			</div>
+		</div>
+
+		<div class="Me-bg" style="padding-bottom: 100px;">
+			<div class="content">
+				<!--导航Start-->
+				<div class="layui-collapse">
+					<div class="layui-colla-item">
+						<a href="../Me.html">
+							<h2 class="layui-colla-title  ">学习兴趣</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Order.html">
+							<h2 class="layui-colla-title ">我的订单</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="">
+							<h2 class="layui-colla-title ">我的收藏</h2>
+						</a>
+
+					</div>
+
+					<div class="layui-colla-item">
+						<a href="Message-center.html">
+							<h2 class="layui-colla-title">消息中心</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Sign-in and shop.html">
+							<h2 class="layui-colla-title">签到赢积分</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="PersonInfoEdit.html">
+							<h2 class="layui-colla-title layui-colla-title-this">设置</h2>
+						</a>
+
+					</div>
+
+					<div class="layui-colla-item">
+						<a href="TeachrtAdmission.html">
+							<h2 class="layui-colla-title">老师入驻</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Contact.html">
+							<h2 class="layui-colla-title">联系小艺</h2>
+						</a>
+
+					</div>
+					
+				</div>
+				<!--导航END -->
+				<!--layui-show为默认打开，现在是全部关闭手风琴，呈折叠状态-->
+
+				<div class="Me-body">
+					<!--设置 -->
+					<div class="data">
+						<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+							<ul class="layui-tab-title">
+								<li class="layui-this">个人资料</li>
+								<li>账号安全</li>
+								<li>关于我们</li>
+
+							</ul>
+							<div class="layui-tab-content">
+								<!--个人资料-->
+								<div class="layui-tab-item layui-show">
+									<div class="Data-Modify">
+										<!--资料更改STATS-->
+										<form action="" class="layui-form" method="post" lay-filter="example">
+
+											<!--头像更改STARS-->
+											<div class="Modify-Headtitle">
+												<div class="layui-upload">
+													<div class="layui-upload-list">
+														<img class="layui-upload-img" id="demo1" src="../img/Teacher/TeacherSmalltitle02.jpg">
+														<p id="demoText"></p>
+													</div>
+													<button type="button" class="layui-btn" id="test1">更换图片</button>
+												</div>
+												<script>
+													layui.use('upload', function() {
+														var $ = layui.jquery,
+															upload = layui.upload;
+
+														//普通图片上传
+														var uploadInst = upload.render({
+															elem: '#test1',
+															url: '/upload/',
+															
+															before: function(obj) {
+																//预读本地文件示例，不支持ie8
+																obj.preview(function(index, file, result) {
+																	$('#demo1').attr('src', result); //图片链接（base64）
+																});
+															},
+															done: function(res) {
+																//如果上传失败
+																if(res.code > 0) {
+																	return layer.msg('上传失败');
+																}
+																//上传成功
+															},
+															error: function() {
+																//演示失败状态，并实现重传
+																var demoText = $('#demoText');
+																demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+																demoText.find('.demo-reload').on('click', function() {
+																	uploadInst.upload();
+																});
+															}
+														});
+
+													});
+												</script>
+
+											</div>
+
+											<!--基本信息更改STARS-->
+											<div class="Modify-Essential-information">
+
+												<div class="layui-form-item">
+													<label class="layui-form-label">账号：</label>
+													<div class="layui-input-block">
+														<div class="layui-form-mid layui-word-aux">5646114564</div>
+													</div>
+												</div>
+												<!--名字-->
+												<div class="layui-form-item">
+													<label class="layui-form-label">名字：</label>
+													<div class="layui-input-block">
+														<input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入名字,限制10字" class="layui-input" type="text" maxlength="10">
+													</div>
+												</div>
+												<!--密码  -->
+												
+												<!--性别-->
+												<div class="layui-form-item layui-form-item-sex">
+													<label class="layui-form-label">性别：</label>
+													<div class="layui-input-block">
+														  <input type="radio" name="sex" value="男" title="男" checked="">
+								     					 <input type="radio" name="sex" value="女" title="女">
+								     
+													</div>
+												</div>
+
+												<!--地区 -->
+												<div class="layui-form-item">
+													<label class="layui-form-label">地区：</label>
+													<div class="layui-input-inline">
+														<select name="quiz1">
+															<option value="">请选择省</option>
+															<option value="浙江" selected="">浙江省</option>
+															<option value="你的工号">江西省</option>
+															<option value="你最喜欢的老师">福建省</option>
+														</select>
+													</div>
+													<div class="layui-input-inline">
+														<select name="quiz2">
+															<option value="">请选择市</option>
+															<option value="杭州">杭州</option>
+															<option value="宁波" disabled="">宁波</option>
+															<option value="温州">温州</option>
+															<option value="温州">台州</option>
+															<option value="温州">绍兴</option>
+														</select>
+													</div>
+													<div class="layui-input-inline">
+														<select name="quiz3">
+															<option value="">请选择县/区</option>
+															<option value="西湖区">西湖区</option>
+															<option value="余杭区">余杭区</option>
+															<option value="拱墅区">临安市</option>
+														</select>
+													</div>
+												</div>
+												<div class="layui-form-item layui-form-text">
+													<label class="layui-form-label">签名：</label>
+													<div class="layui-input-block">
+														<textarea placeholder="用一段话介绍你自己，会在你个人页面展示，最多输入80字" class="layui-textarea" name="desc" type="text" maxlength="80"></textarea>
+													</div>
+												</div>
+
+												<div class="layui-form-item">
+													<div class="layui-input-block">
+														<button class="layui-btn" lay-submit="" lay-filter="demo1" style="margin-left: 430px;">立即提交</button>
+													</div>
+												</div>
+												<script>
+													layui.use(['form', 'layedit', 'laydate'], function(){
+														  var form = layui.form
+														  ,layer = layui.layer
+														  ,layedit = layui.layedit
+														  ,laydate = layui.laydate;
+											  
+											 
+											  
+											  
+													  
+													  //监听提交
+													  form.on('submit(demo1)', function(data){
+													    layer.alert(JSON.stringify(data.field), {
+													      title: '最终的提交信息'
+													    })
+													    return false;
+													  });
+													 
+													  //表单初始赋值
+													  form.val('example', {
+													    "username": "酱酱" // "name": "value"
+													    ,"password": "123456"
+													    ,"interest": 1
+													    ,"like[write]": true //复选框选中状态
+													    ,"close": true //开关状态
+													    ,"sex": "女"
+													    ,"desc": "海燕未来人斗草，江梅已过柳生绵，黄昏疏雨湿秋千。"
+													  })
+													  
+													  
+													});
+												</script>
+											</div>
+											<!--基本信息更改END-->
+
+										</form>
+										<!--资料更改END->
+										</div>
+								</div>
+							
+									
+								<!--个人资料END -->
+
+									</div>
+
+								</div>
+								<!--账号安全START-->
+								<div class="layui-tab-item ">
+									<div class="Account-Security">
+
+										<!--手机start-->
+										<div class="phone">
+											手机：<label for="">13244749963</label>
+											<div class="site-demo-button" id="phone-layer" style="margin-bottom: 0;">
+
+												<a data-method="offset" data-type="auto" class="tel-xiugai ">修改</a>
+											</div>
+											<!--弹窗手机验证-->
+											<div id="tel-yanzheng" style="display: none;">
+												<form action="" method="post">
+													<div class="layui-form-item">
+														<p>手机：<input type="text" /></p>
+
+													</div>
+												</form>
+											</div>
+											
+										<script>
+											layui.use('layer', function() { //独立版的layer无需执行这一句
+												var $ = layui.jquery,
+													layer = layui.layer; //独立版的layer无需执行这一句
+
+												//触发事件
+												var active = {
+													offset: function(othis) {
+														var type = othis.data('type'),
+															text = othis.text();
+
+														layer.open({
+															type: 1,
+															offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+																,
+															id: 'phone-layer' + type //防止重复弹出
+																,
+															//area:['200px','200px'],
+															content: $('#tel-yanzheng'),
+
+															btn: ['取消', '确定'],
+															btnAlign: 'c' //按钮居中
+																,
+															shade: 0.3 //遮罩
+																,
+															title: '修改手机号码',
+															yes: function() {
+																layer.closeAll();
+															}
+														});
+													}
+												};
+
+												$('.tel-xiugai').on('click', function() {
+													var othis = $(this),
+														method = othis.data('method');
+													active[method] ? active[method].call(this, othis) : '';
+												});
+
+											});
+										</script>
+
+										</div>
+										<!--邮箱Start-->
+										<div class="Mailbox">
+											邮箱: <label for="">123456@qq.com</label>
+											<div class="site-demo-button" id="Maibox-layer" style="margin-bottom: 0;">
+
+												<a data-method="offset" data-type="auto" class="Maibox-xiugai ">修改</a>
+											</div>
+											<div id="Maibox-yanzheng" style="display: none;">
+												<form action="" method="post">
+													<div class="layui-form-item">
+														<p>邮箱：<input type="text" /></p>
+
+													</div>
+												</form>
+											</div>
+											<script>
+											layui.use('layer', function() { //独立版的layer无需执行这一句
+												var $ = layui.jquery,
+													layer = layui.layer; //独立版的layer无需执行这一句
+
+												//触发事件
+												var active = {
+													offset: function(othis) {
+														var type = othis.data('type'),
+															text = othis.text();
+
+														layer.open({
+															type: 1,
+															offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+																,
+															id: 'phone-layer' + type //防止重复弹出
+																,
+															//area:['200px','200px'],
+															content: $('#Maibox-yanzheng'),
+
+															btn: ['取消', '确定'],
+															btnAlign: 'c' //按钮居中
+																,
+															shade: 0.3 //遮罩
+																,
+															title: '修改邮箱',
+															yes: function() {
+																layer.closeAll();
+															}
+														});
+													}
+												};
+
+												$('.Maibox-xiugai').on('click', function() {
+													var othis = $(this),
+														method = othis.data('method');
+													active[method] ? active[method].call(this, othis) : '';
+												});
+
+											});
+										</script>
+
+										</div>
+										<!--邮箱END-->
+
+										<!--手机END-->
+
+									</div>
+								</div>
+								
+								<!--账号安全NED-->
+								<!--关于我们START-->
+								<div class="layui-tab-item">
+									艺术一刻钟
+									介绍Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatibus fugit magnam omnis unde esse deleniti magni reiciendis culpa fuga hic laboriosam tenetur illum nobis possimus quia odio placeat similique.
+								</div>
+								<!--关于我们END-->
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<script>
+					//注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
+					layui.use('element', function() {
+						var element = layui.element;
+
+						//…
+					});
+					//限制input输入字数
+					var $remarkInput = $('.layui-input');
+					$remarkInput.on('change', function() {
+						var regC = /[^ -~]+/g;
+						var str = $(this).val();
+						if(regC.test(str)) {
+							var value = str.substr(0, 10);
+							$(this).val(value);
+						}
+					});
+
+					//限制个性签名输入字数
+					var $remarkInput = $('.layui-textarea');
+					$remarkInput.on('change', function() {
+						var regC = /[^ -~]+/g;
+						var str = $(this).val();
+						if(regC.test(str)) {
+							var value = str.substr(0, 10);
+							$(this).val(value);
+						}
+					});
+				</script>
+
+			</div>
+
+		</div>
+		</div>
+		<!--底部-->
+		</div>
+		<div class="footer">
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

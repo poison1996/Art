@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>咏春拳13招基本手法</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script type="text/javascript" src="../js/layui.js"></script>
+		<style type="text/css">
+			.layui-tab-title{background: #4D4F50;}.layui-tab-title li{width: 160px;font-size:18px;letter-spacing: 1px;}.layui-tab-brief>.layui-tab-title .layui-this:after {border-bottom: 2px solid #F63232}	
+			.layui-tab-bar{display: none;}.layui-tab-item>ul>li{width: 290px;}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+		
+		<div class="Study-Class">
+				<!--课程名字S-->
+				<div class="Study-Class-name">
+					<h3>咏春拳13招基本手</h3>
+				</div>
+				<!--课程名字E-->
+				<!--课程播放主体S-->
+				<div class="Study-Class-body">
+					<!--课程播放盒子S-->
+					<div class="Study-Class-videobox">
+						<!--课程视频S -->
+						<div class="Study-Class-video">
+							<video src="../video/1029.mp4"  onclick="playPause()" controls="controls" autoplay="autoplay">
+								<source src="myvideo.mp4" type="video/mp4"></source>
+								<source src="myvideo.ogv" type="video/ogg"></source>
+								<source src="myvideo.webm" type="video/webm"></source>
+								<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+									<param name="movie" value="myvideo.swf" />
+									<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+								</object>
+								当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+							</video>
+							<script type="text/javascript">
+								function playPause() {
+									var myVideo = document.getElementsByTagName('video')[0];
+									if(myVideo.paused) {
+										myVideo.play();
+									} else {
+										myVideo.pause();
+									}
+								}
+							</script>
+						</div>
+						<!--课程视频E -->
+					</div>
+					<!--课程播放盒子E-->
+					
+					<!--课程信息S-->
+					<div class="Study-Class-xinxi">
+						<!--课程简介S-->
+						<div class="Study-Class-jianjie">
+							<div class="Study-Class-jianjie-fengmian">
+								<img src="../img/Activity/1013.png"/>
+							</div>
+							<div class="Study-Classname">
+								<h3>风光摄影后期案例风光摄影后期案例</h3>
+								<span id="start"></span>
+								<script type="text/javascript">
+									layui.use(['rate'], function(){
+									  var rate = layui.rate;
+									  //基础效果
+									  rate.render({
+									    elem: '#start',
+									    theme:'#24B658',
+									    value: 4.9,
+									    text: true,
+									    readonly: true,
+									    half: true,
+									    setText: function(value){
+									      this.span.text(value);
+									    }
+									  })
+									  })
+								</script>
+								<span>168人学过</span>
+							</div>
+						</div>
+						<!--课程简介E-->
+						<!--课程目录/评价S-->
+						<div class="Study-Class-tab">
+							<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+							  <ul class="layui-tab-title">
+							    <li class="layui-this">课程目录</li>
+							    <li>课程评价</li>
+							   
+							  </ul>
+							  <div class="layui-tab-content" >
+							  	<!--课程目录S-->
+							    <div class="layui-tab-item Study-Class-mulu layui-show">
+							    	 <ul>
+							    	 	<li><h3>第一章：问路手</h3></li>
+							    	 	<li><h4><a href="">第一节：问路<span>15:15</span></a></h4></li>
+							    	 	<li><h4><a href="">第二节：招式<span>15:15</span></a></h4></li>
+							    	 	<li><h4><a href="">第三节：动作要领<span>15:15</span></a></h4></li>
+							    	 	<li><h4><a href="">第四节：易犯错误<span>15:15</span></a></h4></li>							    	 	
+							    	 </ul>
+							    	 
+							    	 <ul>
+							    	 	<li><h3>第二章：问路手</h3></li>
+							    	 	<li><h4><a href="">第一节：问路<span>15:15</span></a></h4></li>
+							    	 	<li><h4><a href="">第二节：招式<span>15:15</span></a></h4></li>
+							    	 	<li><h4><a href="">第三节：动作要领<span>15:15</span></a></h4></li>
+							    	 	<li><h4><a href="">第四节：易犯错误<span>15:15</span></a></h4></li>							    	 	
+							    	 </ul>
+							    	 
+							    	 
+							    </div>
+							    <!--课程目录E-->
+							    <!--课程评价S-->
+							    <div class="layui-tab-item">
+							    	<div class="Study-Class-pingjia">
+							    		<div class="Study-Class-pingjia2">
+							    			<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+							    			<p>这是姓名<span id="start2"></span><span>12：56</span></p>
+							    			<div class="Study-Class-pingjia-content">
+							    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptates facere. Adipisci aliquid officia culpa quasi neque amet alias iste illum maxime minus laboriosam officiis. Modi animi veritatis et atque.
+							    			</div>
+							    		</div>	
+							    		<div class="Study-Class-pingjia2">
+							    			<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+							    			<p>这是姓名<span id="start3"></span><span>12：56</span></p>
+							    			<div class="Study-Class-pingjia-content">
+							    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptates facere. Adipisci aliquid officia culpa quasi neque amet alias iste illum maxime minus laboriosam officiis. Modi animi veritatis et atque.
+							    			</div>
+							    			
+							    		</div>
+							    		<div class="Study-Class-pingjia2">
+							    			<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+							    			<p>这是姓名<span id="start4"></span><span>12：56</span></p>
+							    			<div class="Study-Class-pingjia-content">
+							    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptates facere. Adipisci aliquid officia culpa quasi neque amet alias iste illum maxime minus laboriosam officiis. Modi animi veritatis et atque.
+							    			</div>
+							    			
+							    		</div>
+							    		<div class="Study-Class-pingjia2">
+							    			<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+							    			<p>这是姓名<span id="start5"></span><span>12：56</span></p>
+							    			<div class="Study-Class-pingjia-content">
+							    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptates facere. Adipisci aliquid officia culpa quasi neque amet alias iste illum maxime minus laboriosam officiis. Modi animi veritatis et atque.
+							    			</div>
+							    			
+							    		</div>
+							    		<div class="Study-Class-pingjia2">
+							    			<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+							    			<p>这是姓名<span id="start4"></span><span>12：56</span></p>
+							    			<div class="Study-Class-pingjia-content">
+							    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptates facere. Adipisci aliquid officia culpa quasi neque amet alias iste illum maxime minus laboriosam officiis. Modi animi veritatis et atque.
+							    			</div>
+							    			
+							    		</div>
+							    
+							    	
+							    	</div>
+							    	<script type="text/javascript">
+									layui.use(['rate'], function(){
+									  var rate = layui.rate;
+									  //基础效果
+									  rate.render({
+									    elem: '#start2','#start3',
+									    theme:'#24B658',
+									    value: 4.9,
+									    readonly: true,
+									    half: true,
+									    setText: function(value){
+									      this.span.text(value);
+									    }
+									  })
+									  })
+								</script>
+							    </div>
+							    <!--课程评价E-->
+							   
+							  </div>
+							</div> 
+						
+						</div>
+						<!--课程评价/目录E-->
+					</div>
+					<!--课程播放E -->
+				</div>
+				<!--课程播放主体E-->
+		</div>
+
+	
+	</body>
+
+</html>

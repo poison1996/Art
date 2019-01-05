@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>艺术机构-其他</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="keywords" content="艺术,艺术教育,面塑艺术,京剧赏析,橡皮图章雕刻,摄影课程,剪纸艺术,古筝练习,探戈,红绸舞,扇子舞" />
+		<meta name="description" content="面塑艺术,京剧赏析,橡皮图章雕刻,摄影课程,剪纸艺术,古筝练习,探戈,红绸舞,扇子舞,选择艺术一刻钟,让更多的人爱艺术,让更多人的艺术梦得以实现." />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.css"/>
+		<script type="text/javascript" src="../js/swiper.js">		</script>
+		<script type="text/javascript" src="../js/layui.js">		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<div class="layui-input-inline">
+				      <select name="quiz1">
+				        <option value="广东省">广东省</option>
+				        <option value="浙江省" selected="">浙江省</option>
+				        <option value="江西省">江西省</option>
+				        <option value="福建省">福建省</option>
+				      </select>
+				    </div>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+		<div class="content">
+			
+		
+			
+			<div class="banner">
+				<div class="layui-carousel" style="margin: 0px;" id="test1">
+				  <div carousel-item>
+				    <div><img src="../img/banner01.jpg" /></div>
+				    <div><img src="../img/banner02.jpg" /></div>
+				    <div><img src="../img/banner03.jpg" /></div>
+				  </div>
+				</div>
+			</div>
+		
+			<div class="Art-Mechanism">
+				<!--机构分类Start-->
+				<div class="mechanism-fenlei">
+					<ul>
+						<li><a href="../ArtMechanism.html" >全部</a></li>
+						<li><a href="Calligraphy.html" >书法</a></li>
+						<li><a href="Painting.html">绘画</a></li>
+						<li><a href="Sculpture.html" >雕塑</a></li>
+						<li><a href="Handicraft.html" >手工艺</a></li>
+						<li><a href="Music.html">音乐</a></li>
+						<li><a href="Dance.html" >舞蹈</a></li>
+						<li><a href="Theatreh.html" >戏剧</a></li>
+						<li><a href="Photography.html" >摄影</a></li>
+						<li><a href="Other.html" style="color: #F63232;">其他</a></li>
+					</ul>
+				</div>
+				<!--机构分类END-->
+			
+				<!--机构筛选Start-->
+				<div class="mechanism-screen">
+					<ul>
+						<li><a href="">人气</a></li>
+						<li class="this"><a href="">作品</a></li>
+						<li><a href="">评分</a></li>
+					</ul>
+					<hr />
+				</div>
+				<!--机构筛选END-->
+				
+				<!--机构Start -->
+					<div class="layui-row layui-col-space1">
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism01.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts09"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism02.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts10"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism03.png" />
+								</div>
+								<h5 style="height: 25px">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts11"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism04.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts12"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+						<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism01.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts01"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism02.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts02"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism03.png" />
+								</div>
+								<h5 style="height: 25px">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts03"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism04.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts04"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					
+						<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism01.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts05"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism02.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts06"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism03.png" />
+								</div>
+								<h5 style="height: 25px">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts07"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism04.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts08"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					
+						<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism01.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts16"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism02.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts15"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism03.png" />
+								</div>
+								<h5 style="height: 25px">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts14"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="../img/Mechanism/mechanism04.png" />
+								</div>
+								<h5 style="height: 25px;">中央美术学院</h5>
+
+								<div class="Start">
+									<div id="Starts13"></div>
+								</div>
+
+								<div class="Class-Study-number">
+									<span>156人评分</span>
+								</div>
+
+								<div class="mechanism-type">
+									<span class="mechanism-region">广东深圳</span>
+									<span class="mechanism-art">摄影</span>
+								</div>
+								<hr />
+
+								<div class="mechanism-type mechanism-type2">
+									<span class="mechanism-class">88课程</span>
+									<span class="mechanism-art">9999粉丝</span>
+								</div>
+
+							</div>
+						</div>
+					</a>
+
+					
+					
+
+					<script src="../js/layui.js" charset="utf-8"></script>
+					
+				</div>
+
+				<!--机构End -->
+			</div>
+
+			<!--分页-->
+			<div id="Art-library-fenye"></div>
+				<script type="text/javascript" src="../js/layui.js">			</script>
+				<script>
+					layui.use(['rate'], function() {
+							var rate = layui.rate;
+							//只读
+							rate.render({
+								elem: '#Starts09',
+								value: 3.2,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts10',
+								value: 5.0,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts11',
+								value: 4.8,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts12',
+								value: 4.0,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts05',
+								value: 4.8,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts06',
+								value: 5.0,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts07',
+								value: 4.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts08',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts01',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts02',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts03',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts04',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts13',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts14',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts15',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts16',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts17',
+								value: 5.0,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts18',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts19',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts20',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts21',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts22',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts23',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts24',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts25',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts26',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts27',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts28',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts29',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts30',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts31',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts32',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts33',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts34',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts35',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts36',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts37',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts38',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts39',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts40',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+							rate.render({
+								elem: '#Starts41',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts42',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts43',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts44',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts45',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts46',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts47',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							rate.render({
+								elem: '#Starts48',
+								value: 3.9,
+								readonly: true /*只读*/ ,
+								text: true /*开启文本*/ ,
+								half: true /*开启半星*/ ,
+								theme: '#24b658',
+								setText: function(value) {
+									this.span.text(value);
+								}
+							});
+							
+
+						});
+					
+					layui.use(['laypage', 'layer'], function() {
+						var laypage = layui.laypage,
+							layer = layui.layer;
+		
+		
+						//开启HASH
+						  laypage.render({
+						    elem: 'Art-library-fenye'
+						    ,count: 5000
+						    ,curr: location.hash.replace('#!fenye=', '') //获取hash值为fenye的当前页
+						    ,hash: 'fenye' //自定义hash值
+						  });
+		
+					});
+				</script>
+			</div>
+
+		<!--底部-->
+		<div class="footer">
+			<div class="footer-about">
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">商务合作</a></li>
+					<li><a href="">在线留言</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">讲师入驻</a></li>
+				</ul>
+				
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/Wechar.jpg"/></li>
+					</ul>
+					
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+					
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+				
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved.   京ICP备12345678911 </p>
+			
+			</div>
+			
+		</div>
+		<script>
+			layui.use('carousel', function(){
+			  var carousel = layui.carousel;
+			  //建造实例
+			  carousel.render({
+			    elem: '#test1'
+			    ,width: '100%' //设置容器宽度
+			    ,arrow: 'always'
+			    ,interval:3000
+			    ,height:'380px'
+			  });
+			});
+		</script>
+	</body>
+
+</html>

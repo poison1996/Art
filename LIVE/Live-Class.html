@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>咏春拳13招基本手法</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/amazeui.min.css" />
+        <link rel="stylesheet" href="../css/main.css"/>
+		<script type="text/javascript" src="../js/layui.js"></script>
+		<style type="text/css">
+			.layui-tab-title{background: #4D4F50;}.layui-tab-title li{width: 160px;font-size:18px;letter-spacing: 1px;}.layui-tab-brief>.layui-tab-title .layui-this:after {border-bottom: 2px solid #F63232}	
+			.layui-tab-bar{display: none;}.layui-tab-item>ul>li{width: 290px;}
+		</style>
+		<script src="../js/jquery-3.1.1.min.js">		</script>
+		
+	
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+		
+		<div class="Study-Class">
+				<!--课程名字S-->
+				<div class="Study-Class-name">
+					<h3>咏春拳13招基本手</h3>
+				</div>
+				<!--课程名字E-->
+				<!--课程播放主体S-->
+				<div class="Study-Class-body">
+					<!--课程播放盒子S-->
+					<div class="Study-Class-videobox">
+						<!--课程视频S -->
+						<div class="Study-Class-video">
+							<video src="../video/1029.mp4"  onclick="playPause()" controls="controls" autoplay="autoplay">
+								<source src="myvideo.mp4" type="video/mp4"></source>
+								<source src="myvideo.ogv" type="video/ogg"></source>
+								<source src="myvideo.webm" type="video/webm"></source>
+								<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+									<param name="movie" value="myvideo.swf" />
+									<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+								</object>
+								当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+							</video>
+							<script type="text/javascript">
+								function playPause() {
+									var myVideo = document.getElementsByTagName('video')[0];
+									if(myVideo.paused) {
+										myVideo.play();
+									} else {
+										myVideo.pause();
+									}
+								}
+							</script>
+						</div>
+						<!--课程视频E -->
+					</div>
+					<!--课程播放盒子E-->
+					
+					<!--直播信息S-->
+					<div class="Study-Live-xinxi">
+							<div class="wechat">
+		
+							<div class="sidestrip" style="display: none;">
+								
+								<!--三图标-->
+								<div class="sidestrip_icon" >
+									<a id="si_1" style="background: url(images/icon/head_2_1.png) no-repeat;"></a>
+									<a id="si_2"></a>
+									<a id="si_3"></a>
+								</div>
+								
+								
+							</div>
+							
+							<!--聊天窗口-->
+							<div class="talk_window">
+							
+								<!--聊天内容-->
+								<div class="windows_body">
+									<div class="office_text" >
+										<ul class="content" id="chatbox">
+											<li class="me"><img src="../img/class/own_head.jpg" title="金少凯"><span>疾风知劲草，板荡识诚臣</span></li>
+											<li class="other"><img src="../img/class/15.jpg" title="张文超"><h3>流川枫</h3><span>勇夫安知义，智者必怀仁</span></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="windows_input" id="talkbox">
+									
+									<div class="input_box">
+										<textarea name="" rows="" cols="" id="input_box"></textarea>
+										<button id="send">发送</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+					
+					<script type="text/javascript" src="../js/wechat.js"></script>
+					
+					<script type="text/javascript">
+					//三图标
+					window.onload=function(){
+						function a(){
+							var si1 = document.getElementById('si_1');
+							var si2 = document.getElementById('si_2');
+							var si3 = document.getElementById('si_3');
+							si1.onclick=function(){
+								si1.style.background="url(images/icon/head_2_1.png) no-repeat"
+								si2.style.background="";
+								si3.style.background="";
+							};
+							si2.onclick=function(){
+								si2.style.background="url(images/icon/head_3_1.png) no-repeat"
+								si1.style.background="";
+								si3.style.background="";
+							};
+							si3.onclick=function(){
+								si3.style.background="url(images/icon/head_4_1.png) no-repeat"
+								si1.style.background="";
+								si2.style.background="";
+							};
+						};
+						function b(){
+							var text = document.getElementById('input_box');
+							var chat = document.getElementById('chatbox');
+							var btn = document.getElementById('send');
+							var talk = document.getElementById('talkbox');
+							btn.onclick=function(){
+								if(text.value ==''){
+									alert('不能发送空消息');
+								}else{
+									chat.innerHTML += '<li class="me"><img src="'+'../img/class/own_head.jpg'+'"><span>'+text.value+'</span></li>';
+									text.value = '';
+									chat.scrollTop=chat.scrollHeight;
+									talk.style.background="#fff";
+									text.style.background="#fff";
+								};
+							};
+						};
+						a();
+						b();
+					};
+					</script>
+						
+					</div>
+					<!--直播信息E -->
+				</div>
+				<!--课程播放主体E-->
+		</div>
+	
+	
+	</body>
+
+</html>

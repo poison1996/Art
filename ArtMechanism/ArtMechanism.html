@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>艺术机构</title>
+		<link rel="stylesheet" type="text/css" href="../css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src="../js/layui.js">		</script>
+		
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kn45hvAQSgPekicz8wQmI7wcZtQzidW8"></script>	
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js">		</script>
+		<style type="text/css">
+			.layui-tab-title{background-color: #FFFFFF}.layui-tab-title>li{margin-right: 40px;letter-spacing: 1px;}.layui-tab-brief>.layui-tab-title .layui-this:after {border-bottom: 2px solid #F63232}
+			body{background: #EEEEEE;}.Start{clear: both;float: left;margin-left: 0px;}.layui-rate li i.layui-icon{font-size: 16px;}
+		</style>
+	</head>
+	<body>
+		
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				
+				<li class="layui-nav-item ">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="../ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="../img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="../img/class/class01.png"/>
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+		<div class="content">
+			<!--艺术机构-->
+			<div class="ArtMechanism">
+				<div class="ArtMechanism-xinxi">
+					<img src="../img/Mechanism/mechanism03.png"/>
+				</div>
+				<div class="ArtMechanism-xinxi2">
+						<h3>深圳源创信息美术学院</h3>
+						<div class="Start">	</div>
+							<script>
+							layui.use(['rate'], function(){
+							  var rate = layui.rate;
+							  //基础效果
+							  rate.render({
+							    elem: '.Start',
+							    value:4.5,
+							    theme:'#24B658',
+							    readonly: true,
+							   	half: true,
+							   	text: true,
+							   	setText: function(value){
+							      this.span.text(value);
+							    }
+							  
+							  });
+							});
+						</script>
+						<span>文化馆</span>
+						
+						<p><img src="../img/tubiao/dizhi2.png"/>广东深圳 宝安桥头东海百货921</p>
+						<p><img src="../img/tubiao/tel.png"/>0775-1234567</p>
+						<p><img src="../img/tubiao/time2.png"/>周一 至 周日 09:00-18:00</p>
+				</div>
+				
+				<div class="zhuangshi"></div>
+				<!--机构TAB-->
+				
+				<div class="ArtMechanism-tab">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+					  <ul class="layui-tab-title">
+					    <li class="layui-this">机构简介</li>
+					    <li>机构课程</li>
+					    <li>机构资讯</li>
+					    <li>机构活动</li>
+					    <li>机构艺人</li>
+					  </ul>
+					  <div class="layui-tab-content" >
+					  	<!--场馆介绍S-->
+					    <div class="layui-tab-item  layui-show ">
+					    	<div class="Mechanism-about">
+					    		<img src="../img/Mechanism/1022.png" style="width: 100%;"/>
+					    	</div>
+					    </div>
+					    <!--场馆介绍E-->
+					    <!--场馆课程S-->
+					    <div class="layui-tab-item">
+					    	<div class="Mechanism-class">
+					    		<div class="Mechanism-class2">
+					    			<a href="">
+					    			<div class="Mechanism-class3">
+					    				<img src="../img/banner10.png"/>
+					    			</div>
+					    			<div class="mechanism-class4">
+					    				<h3>PS创意影像合成案例教程</h3>
+					    				<div class="str1"></div>
+					    				<br />
+					    				<span>168人学过</span>
+					    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-class2">
+					    			<a href="">
+					    			<div class="Mechanism-class3">
+					    				<img src="../img/banner10.png"/>
+					    			</div>
+					    			<div class="mechanism-class4">
+					    				<h3>PS创意影像合成案例教程</h3>
+					    				<div class="str1"></div>
+					    				<br />
+					    				<span>168人学过</span>
+					    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+					    			</div>
+					    			</a>
+					    			
+					    		</div>
+						    	<div class="Mechanism-class2">
+						    			<a href="">
+						    			<div class="Mechanism-class3">
+						    				<img src="../img/banner10.png"/>
+						    			</div>
+						    			<div class="mechanism-class4">
+						    				<h3>PS创意影像合成案例教程</h3>
+						    				<div class="str1"></div>
+						    				<br />
+						    				<span>168人学过</span>
+						    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+						    			</div>
+						    			</a>
+						    	</div>
+						    	<div class="Mechanism-class2">
+						    			<a href="">
+						    			<div class="Mechanism-class3">
+						    				<img src="../img/banner10.png"/>
+						    			</div>
+						    			<div class="mechanism-class4">
+						    				<h3>PS创意影像合成案例教程</h3>
+						    				<div class="str1"></div>
+						    				<br />
+						    				<span>168人学过</span>
+						    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+						    			</div>
+						    			</a>
+						    	</div>
+						    	<div class="Mechanism-class2">
+						    		<a href="">
+						    			<div class="Mechanism-class3">
+						    				<img src="../img/banner10.png"/>
+						    			</div>
+						    			<div class="mechanism-class4">
+						    				<h3>PS创意影像合成案例教程</h3>
+						    				<div class="str1"></div>
+						    				<br />
+						    				<span>168人学过</span>
+						    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+						    			</div>
+						    		</a>	
+						    	</div>
+						    	<div class="Mechanism-class2">
+						    		<a href="">
+						    			<div class="Mechanism-class3">
+						    				<img src="../img/banner10.png"/>
+						    			</div>
+						    			<div class="mechanism-class4">
+						    				<h3>PS创意影像合成案例教程</h3>
+						    				<div class="str1"></div>
+						    				<br />
+						    				<span>168人学过</span>
+						    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+						    			</div>
+						    		</a>	
+						    	</div>
+						    	<div class="Mechanism-class2">
+						    		<a href="">
+						    			<div class="Mechanism-class3">
+						    				<img src="../img/banner10.png"/>
+						    			</div>
+						    			<div class="mechanism-class4">
+						    				<h3>PS创意影像合成案例教程</h3>
+						    				<div class="str1"></div>
+						    				<br />
+						    				<span>168人学过</span>
+						    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+						    			</div>
+						    		</a>	
+						    	</div>
+						    	<div class="Mechanism-class2">
+						    		<a href="">
+						    			<div class="Mechanism-class3">
+						    				<img src="../img/banner10.png"/>
+						    			</div>
+						    			<div class="mechanism-class4">
+						    				<h3>PS创意影像合成案例教程</h3>
+						    				<div class="str1"></div>
+						    				<br />
+						    				<span>168人学过</span>
+						    				<p><img src="../img/tubiao/ren.png"/>独孤求败</p>
+						    			</div>
+						    		</a>	
+						    	</div>
+						    	
+						    </div>
+					    	<script>
+								layui.use(['rate'], function(){
+								  var rate = layui.rate;
+								  //基础效果
+								  rate.render({
+								    elem: '.str1',
+								    value:4.5,
+								    theme:'#24B658',
+								    readonly: true,
+								   	half: true,
+								   	text: true,
+								   	setText: function(value){
+								      this.span.text(value);
+								    }
+								  
+								  });
+								});
+							</script>
+					    </div>
+					    <!--场馆课程E-->
+					    <!--场馆资讯S-->
+					    <div class="layui-tab-item ">
+					    	<div class="Mechanism-new">
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-new2">
+					    			<a href="">
+					    			<div class="Mechanism-new3">
+					    				<img src="../img/banner09.png"/>
+					    			</div>
+					    			<div class="Mechanism-new4">
+					    				<h3>张大千作品欣赏，看完你就知道什么是天价</h3>
+					    				<span>张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。张大千是二十世纪中国画坛最具传奇色彩的国画大师，无论是绘画、书法、篆刻、诗词都无所不通。</span>
+					    				<p>
+					    					<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    					<span>深圳源创信息美术学院</span>
+					    					<span>168评</span>
+					    					<span>09-10 12:00</span>
+					    				</p>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		
+					    	</div>
+					    </div>
+					    <!--场馆资讯E-->
+					    <!--场馆活动S-->
+					    <div class="layui-tab-item">
+					    	<div class="Mechanism-Activity">
+					    		<div class="Mechanism-Activity2">
+					    			<a href="">
+					    			<div class="Mechanism-Activity3">
+					    				<img src="../img/class/class02.png"/>
+					    			</div>
+					    			<div class="Mechanism-Activity4">
+					    				<h3>后二次元时代下的游戏运营与推广</h3>
+					    				<p>
+					    					<span>广东深圳</span>
+					    					<span>06/08 周一</span>
+					    				</p>
+					    				<h4>
+					    					<button>线下</button>
+					    					<span>123人参加</span>
+					    				</h4>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-Activity2">
+					    			<a href="">
+					    			<div class="Mechanism-Activity3">
+					    				<img src="../img/class/class02.png"/>
+					    			</div>
+					    			<div class="Mechanism-Activity4">
+					    				<h3>后二次元时代下的游戏运营与推广</h3>
+					    				<p>
+					    					<span>广东深圳</span>
+					    					<span>06/08 周一</span>
+					    				</p>
+					    				<h4>
+					    					<button>线下</button>
+					    					<span>123人参加</span>
+					    				</h4>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-Activity2">
+					    			<a href="">
+					    			<div class="Mechanism-Activity3">
+					    				<img src="../img/class/class02.png"/>
+					    			</div>
+					    			<div class="Mechanism-Activity4">
+					    				<h3>后二次元时代下的游戏运营与推广</h3>
+					    				<p>
+					    					<span>广东深圳</span>
+					    					<span>06/08 周一</span>
+					    				</p>
+					    				<h4>
+					    					<button>线下</button>
+					    					<span>123人参加</span>
+					    				</h4>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-Activity2">
+					    			<a href="">
+					    			<div class="Mechanism-Activity3">
+					    				<img src="../img/class/class02.png"/>
+					    			</div>
+					    			<div class="Mechanism-Activity4">
+					    				<h3>后二次元时代下的游戏运营与推广</h3>
+					    				<p>
+					    					<span>广东深圳</span>
+					    					<span>06/08 周一</span>
+					    				</p>
+					    				<h4>
+					    					<button>线下</button>
+					    					<span>123人参加</span>
+					    				</h4>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-Activity2">
+					    			<a href="">
+					    			<div class="Mechanism-Activity3">
+					    				<img src="../img/class/class02.png"/>
+					    			</div>
+					    			<div class="Mechanism-Activity4">
+					    				<h3>后二次元时代下的游戏运营与推广</h3>
+					    				<p>
+					    					<span>广东深圳</span>
+					    					<span>06/08 周一</span>
+					    				</p>
+					    				<h4>
+					    					<button>线下</button>
+					    					<span>123人参加</span>
+					    				</h4>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-Activity2">
+					    			<a href="">
+					    			<div class="Mechanism-Activity3">
+					    				<img src="../img/class/class02.png"/>
+					    			</div>
+					    			<div class="Mechanism-Activity4">
+					    				<h3>后二次元时代下的游戏运营与推广</h3>
+					    				<p>
+					    					<span>广东深圳</span>
+					    					<span>06/08 周一</span>
+					    				</p>
+					    				<h4>
+					    					<button>线下</button>
+					    					<span>123人参加</span>
+					    				</h4>
+					    			</div>
+					    			</a>
+					    		</div>
+					    		<div class="Mechanism-Activity2">
+					    			<a href="">
+					    			<div class="Mechanism-Activity3">
+					    				<img src="../img/class/class02.png"/>
+					    			</div>
+					    			<div class="Mechanism-Activity4">
+					    				<h3>后二次元时代下的游戏运营与推广</h3>
+					    				<p>
+					    					<span>广东深圳</span>
+					    					<span>06/08 周一</span>
+					    				</p>
+					    				<h4>
+					    					<button>线下</button>
+					    					<span>123人参加</span>
+					    				</h4>
+					    			</div>
+					    			</a>
+					    		</div>
+					    	
+					    	
+					    	
+					    	</div>
+					    </div>
+					    <!--场馆活动E-->
+					    <!--场馆艺人S-->
+					    <div class="layui-tab-item">
+					    	<div class="Mechanism-Artist">
+					    		<div class="Mechanism-Artist2">
+					    			<a href="">
+					    			<div class="Mechanism-Artist3">
+					    				<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    			</div>
+					    			</a>
+					    			<div class="Mechanism-Artist4">
+					    				<h2>艺人名字</h2>
+					    				<h3>艺人简介艺人简介艺人简介艺人简艺人简介</h3>
+					    				<h4>1280人关注  |  55课程</h4>
+					    				
+					    				<input class="Artist2" type="button" name="" id="" value="关注" />
+		
+					    			</div>
+					    			
+					    		</div>
+					    		<div class="Mechanism-Artist2">
+					    			
+					    			<a href="">
+					    			<div class="Mechanism-Artist3">
+					    				<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    			</div>
+					    			</a>
+					    			<div class="Mechanism-Artist4">
+					    				<h2>艺人名字</h2>
+					    				<h3>艺人简介艺人简介艺人简介艺人简艺人简介</h3>
+					    				<h4>1280人关注  |  55课程</h4>
+					    				
+					    				<input class="Artist2" type="button" name="" id="" value="关注" />
+		
+					    			</div>
+					    			
+					    		</div>
+					    		<div class="Mechanism-Artist2">
+					    			
+					    			<a href="">
+					    			<div class="Mechanism-Artist3">
+					    				<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    			</div>
+					    			</a>
+					    			<div class="Mechanism-Artist4">
+					    				<h2>艺人名字</h2>
+					    				<h3>艺人简介艺人简介艺人简介艺人简艺人简介</h3>
+					    				<h4>1280人关注  |  55课程</h4>
+					    				
+					    				<input class="Artist2" type="button" name="" id="" value="关注" />
+		
+					    			</div>
+					    			
+					    		</div>
+					    		<div class="Mechanism-Artist2">
+					    			
+					    			<a href="">
+					    			<div class="Mechanism-Artist3">
+					    				<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    			</div>
+					    			</a>
+					    			<div class="Mechanism-Artist4">
+					    				<h2>艺人名字</h2>
+					    				<h3>艺人简介艺人简介艺人简介艺人简艺人简介</h3>
+					    				<h4>1280人关注  |  55课程</h4>
+					    				
+					    				<input class="Artist2" type="button" name="" id="" value="关注" />
+		
+					    			</div>
+					    			
+					    		</div>
+					    		<div class="Mechanism-Artist2">
+					    			
+					    			<a href="">
+					    			<div class="Mechanism-Artist3">
+					    				<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    			</div>
+					    			</a>
+					    			<div class="Mechanism-Artist4">
+					    				<h2>艺人名字</h2>
+					    				<h3>艺人简介艺人简介艺人简介艺人简艺人简介</h3>
+					    				<h4>1280人关注  |  55课程</h4>
+					    				
+					    				<input class="Artist2" type="button" name="" id="" value="关注" />
+		
+					    			</div>
+					    			
+					    		</div>
+					    		<div class="Mechanism-Artist2">
+					    			
+					    			<a href="">
+					    			<div class="Mechanism-Artist3">
+					    				<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    			</div>
+					    			</a>
+					    			<div class="Mechanism-Artist4">
+					    				<h2>艺人名字</h2>
+					    				<h3>艺人简介艺人简介艺人简介艺人简艺人简介</h3>
+					    				<h4>1280人关注  |  55课程</h4>
+					    				
+					    				<input class="Artist2" type="button" name="" id="" value="关注" />
+		
+					    			</div>
+					    			
+					    		</div>
+					    		<div class="Mechanism-Artist2">
+					    			
+					    			<a href="">
+					    			<div class="Mechanism-Artist3">
+					    				<img src="../img/Teacher/TeacherSmalltitle02.jpg"/>
+					    			</div>
+					    			</a>
+					    			<div class="Mechanism-Artist4">
+					    				<h2>艺人名字</h2>
+					    				<h3>艺人简介艺人简介艺人简介艺人简艺人简介</h3>
+					    				<h4>1280人关注  |  55课程</h4>
+					    				
+					    				<input class="Artist2" type="button" name="" id="" value="关注" />
+		
+					    			</div>
+					    			
+					    		</div>
+					    		
+					    		<script type="text/javascript">
+											$(document).ready(function(){
+												var onOff=true;
+												var div=$(".Artist2");
+												div.click(function(){
+													if (div.onOff){
+														div.val("关注");
+														div.css({"background":'#E7F3FF'});
+														div.css({"color":'#1086FF'});
+														div.onOff=false;
+													}else{
+														div.css({"background":'#D9D9D9'});
+														div.css({"color":'#ffffff'});
+														div.val("已关注");
+														div.onOff=true;
+													}
+												});
+											});
+								</script>
+					    	</div>
+					    </div>
+					    <!--场馆艺人E-->
+					  </div>
+					</div> 
+					
+				</div>
+			
+				<!--推荐场馆S-->
+				<div class="Recommend-Mechanism">
+					<h3><span>&nbsp;</span>推荐机构</h3>
+					<div class="Recommend-Mechanism2">
+						<div class="Recommend-Mechanism3">
+							<img src="../img/class/class04.png"/>
+						</div>
+						<div class="Recommend-Mechanism4">
+							<h3>上海当代艺术馆</h3>
+							<h4>地址：上海市黄浦区南京西路231号人民公园7号门内</h4>
+							<h5>电话：0755-1234567</h5>
+						</div>
+					</div>
+					
+					<div class="Recommend-Mechanism2">
+						<div class="Recommend-Mechanism3">
+							<img src="../img/class/class04.png"/>
+						</div>
+						<div class="Recommend-Mechanism4">
+							<h3>上海当代艺术馆</h3>
+							<h4>地址：上海市黄浦区南京西路231号人民公园7号门内</h4>
+							<h5>电话：0755-1234567</h5>
+						</div>
+					</div>
+					<div class="Recommend-Mechanism2">
+						<div class="Recommend-Mechanism3">
+							<img src="../img/class/class04.png"/>
+						</div>
+						<div class="Recommend-Mechanism4">
+							<h3>上海当代艺术馆</h3>
+							<h4>地址：上海市黄浦区南京西路231号人民公园7号门内</h4>
+							<h5>电话：0755-1234567</h5>
+						</div>
+					</div>
+					<div class="Recommend-Mechanism2">
+						<div class="Recommend-Mechanism3">
+							<img src="../img/class/class04.png"/>
+						</div>
+						<div class="Recommend-Mechanism4">
+							<h3>上海当代艺术馆</h3>
+							<h4>地址：上海市黄浦区南京西路231号人民公园7号门内</h4>
+							<h5>电话：0755-1234567</h5>
+						</div>
+					</div>
+					
+				</div>
+				<!--推荐场馆E-->
+				
+				<div class="footer footer2" >
+			<div class="footer-about ">
+				<ul>
+					<li>
+						<a href=" ">关于我们</a>
+					</li>
+					<li>
+						<a href=" ">商务合作</a>
+					</li>
+					<li>
+						<a href=" ">在线留言</a>
+					</li>
+					<li>
+						<a href=" ">联系我们</a>
+					</li>
+					<li>
+						<a href=" ">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat ">
+					<ul>
+						<li>微信</li>
+						<li><img src="../img/QR/MyWeChar.png"/></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact ">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+			</div>
+			<!--机构地图S-->
+			<div class="ArtMechanism-Map">
+				<div  id="map">
+					<script>
+						    //创建和初始化地图函数：
+						    function initMap(){
+						      createMap();//创建地图
+						      setMapEvent();//设置地图事件
+						      addMapControl();//向地图添加控件
+						      addMapOverlay();//向地图添加覆盖物
+						    }
+						    function createMap(){ 
+						      map = new BMap.Map("map"); 
+						      map.centerAndZoom(new BMap.Point(113.810421,22.694645),17);
+						    }
+						    function setMapEvent(){
+						      map.enableScrollWheelZoom();
+						      map.enableKeyboard();
+						      map.enableDragging();
+						      map.enableDoubleClickZoom()
+						    }
+						    function addClickHandler(target,window){
+						      target.addEventListener("click",function(){
+						        target.openInfoWindow(window);
+						      });
+						    }
+						    function addMapOverlay(){
+						      var markers = [
+						        {content:"广东深圳 宝安桥头东海百货921",title:"东海百货",imageOffset: {width:0,height:3},position:{lat:22.699062,lng:113.804276}}
+						      ];
+						      for(var index = 0; index < markers.length; index++ ){
+						        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+						        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+						          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+						        })});
+						        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+						        var opts = {
+						          width: 200,
+						          title: markers[index].title,
+						          enableMessage: false
+						        };
+						        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+						        marker.setLabel(label);
+						        addClickHandler(marker,infoWindow);
+						        map.addOverlay(marker);
+						      };
+						    }
+						   
+						    var map;
+						      initMap();
+						  </script>	
+				</div>
+			</div>
+			<!--机构地图E-->
+		
+		
+		</div>
+		</div>
+	
+
+	</body>
+</html>
