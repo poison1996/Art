@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta name="" charset="utf-8" content="" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js">	</script>
+	</head>
+
+	<body>
+	 <div id='Addchapter'> </div>
+					         
+					        <button onclick='add()'  class="Addchapter">添加新章节</button>
+					 
+					        <script>
+					            const main = $('#Addchapter');
+					            let id = 1;
+					 
+					 			//添加章
+					            function add() {
+					                let html = '<div class="chapter"  id="id-'+ id +'">第 '+ id +'章 <button class="delchapter" >删除</button>\
+					                <br/>\
+					                <h3>章节标题：<input maxlength="30" placeholder="请输入章节标题,限制最大字数为24字"></h3>\
+					                <button onclick="addNewsection()">添加小节</button>\
+					                </div>';
+					                main.append(html);
+					                id += 1;
+					            }
+					            //添加节
+					            function addNewsection(){
+					            	let html = '<div chass="section"></div>'
+					            }
+					        </script>
+	
+	</body>
+
+</html>

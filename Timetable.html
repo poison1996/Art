@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+			.layui-tab-title>li{font-size: 17px; margin-right: 20px;line-height: 40px;	}
+			.layui-tab-content{	margin-top: 10px;}
+			.layui-col-md3{margin-top: 10px;}
+			.layui-tab-title{height: 47px;}
+			.content{min-height:550px;	}.layui-tab{position: relative;}
+			.layui-tab-brief>.layui-tab-more li.layui-this:after,
+			.layui-tab-brief>.layui-tab-title .layui-this:after {border-radius: 0;border-bottom: 2px solid red	}
+			.grid-demo>h5{font-size: 15px;}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item layui-this">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+		<div class="we">
+			<div class="we-xinxi">
+				<div class="we-xinxi1">
+					<img src="img/Teacher/TeacherSmalltitle02.jpg" />
+					<a href="#">
+						<div class="mask">
+							<h3>修改头像</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="we-xinxin2">
+					<span class="we-name">酱酱123</span>
+					<br /><br />
+
+					<span class="we-xinxi3">知识是一种快乐，而好奇则是知识的萌芽。</span>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			
+			
+			<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+				<ul class="layui-tab-title">
+					<li class="layui-this">我的订阅</li>
+					<li>我的收藏</li>
+				</ul>
+				<div class="layui-tab-content" >
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="100%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao2">
+								<p>已学完 <img src="img/tubiao/yes.png"/></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					
+						<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="32.5%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao">
+								<p>已学到<span>8/26节</span></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					<!--课表Start          -->
+						<div class="Timetable">
+							<!--课程封面图片-->
+							<div class="Timetable-img">
+								<img src="img/class/class01.png"/>
+							</div>
+							<!--课程名字-->
+							<div class="Timetable-xinxi">
+								<span>PS创意影像合成案例教程-高高兴兴开开心心</span>
+							</div>
+							<!--进度条 -->
+							<div class="Timetable-jindu">
+								<div class="layui-progress">
+								  <div class="layui-progress-bar layui-bg-green" lay-percent="100%"></div>
+								</div>
+							</div>
+							<div class="Timetable-xuedao2">
+								<p>已学完 <img src="img/tubiao/yes.png"/></p>
+							</div>
+						</div>
+					<!--课表End         -->
+					</div>
+					<div class="layui-tab-item">
+						<div class="layui-row layui-col-space1">
+						    <a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="img/class/class01.png" />
+								</div>
+								<h5 class="class-name"> 书艺问道40年--从装帧到书籍设计书艺问道40年</h5>
+							
+								<div class="Class-Study-zhuangtai">
+									<a href="index.html"><input type="button" name="" id="" value="进入学习"  /></a>
+								</div>
+								
+
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="img/class/class01.png" />
+								</div>
+								<h5 class="class-name"> 书艺问道40年--从装帧到书籍设计书艺问道40年</h5>
+							
+								<div class="Class-Study-zhuangtai">
+									<a href="index.html"><input type="button" name="" id="" value="进入学习"  /></a>
+								</div>
+								
+
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="img/class/class01.png" />
+								</div>
+								<h5 class="class-name"> 书艺问道40年--从装帧到书籍设计书艺问道40年</h5>
+							
+								<div class="Class-Study-zhuangtai">
+									<a href="index.html"><input type="button" name="" id="" value="进入学习"  /></a>
+								</div>
+								
+
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="layui-col-md3">
+							<div class="grid-demo grid-demo-bg1">
+								<div class="grid-demoimg">
+									<img src="img/class/class01.png" />
+								</div>
+								<h5 class="class-name"> 书艺问道40年--从装帧到书籍设计书艺问道40年</h5>
+							
+								<div class="Class-Study-zhuangtai">
+									<a href="index.html"><input type="button" name="" id="" value="进入学习"  /></a>
+								</div>
+								
+
+							</div>
+						</div>
+					</a>
+						  </div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<script src="js/layui.js"></script>
+			<script>
+				layui.use('element', function() {
+					var $ = layui.jquery,
+						element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+					//触发事件
+					var active = {
+						
+						tabChange: function() {
+							//切换到指定Tab项
+							element.tabChange('demo', '22'); //切换到：用户管理
+						}
+					};
+
+				
+				});
+			</script>
+
+		</div>
+
+		<!--底部-->
+		<div class="footer" style="margin-top: 50px;">
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/layui.js">
+		</script>
+	</body>
+
+</html>

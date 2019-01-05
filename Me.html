@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的页面</title>
+		<link rel="stylesheet" type="text/css" href="css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script type="text/javascript" src="js/layui.js">		</script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js">		</script>
+		<style type="text/css">
+			.layui-form-label{font-size: 24px;padding: 26px 15px;}
+		</style>
+
+	</head>
+
+	<body style="background: #EEEEEE;">
+		<div class="header">
+			<ul class="layui-nav" lay-filter="">
+				<li class="layui-nav-item ">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="layui-nav-item ">
+					<a href="ArtGallery.html">艺库</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="ArtShell.html">艺海拾贝</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Information-Activity.html">资讯活动</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">下载app</a>
+					<dl class="layui-nav-child">
+						<!-- 二级菜单 -->
+						<dd>
+							<a href=""><img src="img/QR/QR.png" /></a>
+						</dd>
+
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Timetable.html">课表</a>
+					<dl class="layui-nav-child Study-Record">
+						<dd>
+							<a href="" style="color:#F63232;">最近学习记录</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">影响消费品消费因素</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">从极少艺术到概念艺术-转折点上的极简主义素</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">中国传统的未来观</a>
+						</dd>
+						<dd>
+							<img src="img/class/class01.png" />
+							<a href="">用心聆听别人的话语</a>
+						</dd>
+						<dd>
+							<a href="" style="text-align: center;">查看更多</a>
+						</dd>
+					</dl>
+
+				</li>
+
+				<li class="layui-nav-item" style="float: right;">
+					<div class="head-touxiang">
+						<img src="img/Teacher/TeacherSmalltitle02.jpg"/>
+					</div>
+				</li>
+				<li class="layui-nav-item" style="float: right;">
+					<input type="" name="" id="" value="" placeholder="搜索..." class="search" />
+				</li>
+
+			</ul>
+
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function() {
+					var element = layui.element;
+
+					//…
+				});
+			</script>
+		</div>
+
+
+		<div class="Me-bg">
+			<div class="content">
+				<div class="layui-collapse">
+					<div class="layui-colla-item">
+						<a href="Me.html">
+							<h2 class="layui-colla-title  layui-colla-title-this">学习兴趣</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Me/Order.html">
+							<h2 class="layui-colla-title">我的订单</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Me/Collection.html">
+							<h2 class="layui-colla-title">我的收藏</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Me/Message-center.html">
+							<h2 class="layui-colla-title">消息中心</h2>
+						</a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="Me/PersonInfoEdit.html">
+							<h2 class="layui-colla-title">设置</h2></a>
+
+					</div>
+
+					<div class="layui-colla-item">
+						<a href="Me/TeachrtAdmission.html">
+							<h2 class="layui-colla-title">老师入驻</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<a href="">
+							<h2 class="layui-colla-title">联系小艺</h2></a>
+
+					</div>
+					<div class="layui-colla-item">
+						<h2 class="layui-colla-title">鲁迅</h2>
+						<div class="layui-colla-content ">内容区域</div>
+					</div>
+				</div>
+				<!--layui-show为默认打开，现在是全部关闭手风琴，呈折叠状态-->
+
+				<div class="Me-body">
+					<!-- 内容主体区域 -->
+					<div class="Art-class2">
+
+						<div class="Interest">
+
+							<form class="layui-form" action="">
+								
+								
+								
+								<div class="layui-form-item">
+									 <label class="layui-form-label">摄影：</label>
+									
+									<div class="layui-input-block">
+										<input type="checkbox" name="like[houqixiutu]" title="后期修图"onclick="check(this)">
+										<input type="checkbox" name="like[guangaosheying]" title="广告摄影" checked onclick="check(this)">
+										<input type="checkbox" name="like[fengguangsheying]" title="风光摄影" onclick="check(this)">
+										<input type="checkbox" name="like[jichusheying]" title="基础摄影" />
+									</div>
+								</div>
+								<div class="layui-form-item">
+									 <label class="layui-form-label">戏剧：</label>
+									<div class="layui-input-block">
+										<input type="checkbox" name="like[piying]" title="皮影" checked onclick="check(this)">
+										<input type="checkbox" name="like[jingjushangxi]" title="京剧赏析"onclick="check(this)" >
+										<input  type="checkbox" name="like[jingju" title="京剧"onclick="check(this)">
+										
+									</div>
+								</div>
+								<div class="layui-form-item">
+									 <label class="layui-form-label">音乐：</label>
+									<div class="layui-input-block">
+										<input type="checkbox" name="like[gechang]" title="歌唱" onclick="check(this)"/>
+										<input type="checkbox" name="like[jita]" title="吉他" onclick="check(this)"/>
+										<input type="checkbox" name="like[xiaotiqin]" title="小提琴" onclick="check(this)"/>
+										<input type="checkbox" name="like[gangqin]" title="钢琴" onclick="check(this)"/>
+										<input type="checkbox" name="like[jinshuyue]" title="金属乐"onclick="check(this)"/>
+										<input type="checkbox" name="like[changdi]" title="长笛" onclick="check(this)"/>
+										<input type="checkbox" name="like[erhu]" title="二胡"onclick="check(this)"/>
+									</div>
+								</div>	
+								<div class="layui-form-item">
+									
+								
+									 <label class="layui-form-label">绘画：</label>
+									<div class="layui-input-block">
+										<input type="checkbox" name="like[youhua]" title="油画" onclick="check(this)"/>
+										<input type="checkbox" name="like[shuimohua]" title="水墨画" onclick="check(this)"/ >
+										<input type="checkbox" name="like[shahua]" title="沙画"onclick="check(this)"/>
+										
+									</div>
+								</div>
+								<div class="layui-form-item">
+									
+								
+									
+									 <label class="layui-form-label">摄影：</label>
+									<div class="layui-input-block">
+										<input type="checkbox" name="like[houqixiutu]" title="后期修图" onclick="check(this)"/>
+										<input type="checkbox" name="like[guangaosheying]" title="广告摄影" checked onclick="check(this)"/>
+										<input type="checkbox" name="like[fengguangsheying]" title="风光摄影" onclick="check(this)">
+										<input type="checkbox" name="like[jichusheying]" title="基础摄影" onclick="check(this)"/>
+									</div>
+								
+								</div>
+								<script type="text/javascript">
+									var limit = 6,
+										num = 0;
+									function check(obj) {
+										obj.checked ? num++ : num--;
+										alert(num);
+										if(num > limit) {
+											obj.checked = false;
+											alert("最多选择6项");
+											num--;
+										}
+									};
+								</script>
+							
+								
+								<div class="layui-form-item" style="margin-top: 50px;">
+									<div class="layui-input-block">
+										<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+										<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+									</div>
+								</div>
+							</form>
+
+							<script>
+								//Demo
+								layui.use('form', function() {
+									var form = layui.form;
+
+									//监听提交
+									form.on('submit(formDemo)', function(data) {
+										layer.msg(JSON.stringify(data.field));
+										return false;
+									});
+								});
+							</script>
+
+						</div>
+
+					</div>
+				</div>
+				<script>
+					//注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
+					layui.use('element', function() {
+						var element = layui.element;
+
+						//…
+					});
+				</script>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div class="footer" >
+			<div class="footer-about">
+				<ul>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">商务合作</a>
+					</li>
+					<li>
+						<a href="">在线留言</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">讲师入驻</a>
+					</li>
+				</ul>
+
+				<div class="footer-WeChat">
+					<ul>
+						<li>微信</li>
+						<li><img src="img/QR/Wechar.jpg" /></li>
+					</ul>
+
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li>联系我们</li>
+						<li>0755-1234567</li>
+						<li>在线QQ：123456</li>
+						<li>邮箱：123456@yc.com</li>
+					</ul>
+
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p>艺术一刻钟科技集团旗下成员公司</p>
+				<br />
+				<p>(c) Copyright 2018 Administrator. All Rights Reserved. 京ICP备12345678911 </p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
